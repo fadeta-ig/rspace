@@ -138,16 +138,16 @@ body {
   letter-spacing: -0.02em;
   color: var(--text-primary);
   margin-bottom: 1rem;
-  width: 1000px;
+  max-width: 900px;
 }
 
 .hero-gradient-text {
-  background: linear-gradient(90deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  background: linear-gradient(90deg, #000000, #475569, #94a3b8, #000000);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradientMove 3s ease infinite;
+  animation: gradientMove 6s linear infinite;
 }
 
 @keyframes gradientMove {

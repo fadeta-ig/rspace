@@ -72,7 +72,7 @@ export default function Hero() {
 
             ctx.beginPath();
             ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(37, 99, 235, ${particle.opacity})`;
+            ctx.fillStyle = `rgba(0, 0, 0, ${particle.opacity})`;
             ctx.fill();
 
             for (let j = i + 1; j < particles.length; j++) {
@@ -85,7 +85,7 @@ export default function Hero() {
                     ctx.beginPath();
                     ctx.moveTo(particle.x, particle.y);
                     ctx.lineTo(other.x, other.y);
-                    ctx.strokeStyle = `rgba(37, 99, 235, ${0.15 * (1 - distance / 120)})`;
+                    ctx.strokeStyle = `rgba(0, 0, 0, ${0.1 * (1 - distance / 120)})`;
                     ctx.lineWidth = 0.5;
                     ctx.stroke();
                 }

@@ -16,10 +16,10 @@ interface Package {
     featured: boolean;
     premium: boolean;
     specs: {
-        desain: string;
-        halaman: string;
-        email: string;
-        hosting: string;
+        teknis: string;
+        server: string;
+        waktu: string;
+        revisi: string;
     };
     features: string[];
     buttonText: string;
@@ -106,20 +106,20 @@ export default function Pricing() {
                             {/* Specs */}
                             <div className="pkg-specs">
                                 <div className="spec-row">
-                                    <span>Desain</span>
-                                    <span>{pkg.specs.desain}</span>
+                                    <span>Teknis</span>
+                                    <span>{pkg.specs.teknis}</span>
                                 </div>
                                 <div className="spec-row">
-                                    <span>Halaman</span>
-                                    <span>{pkg.specs.halaman}</span>
+                                    <span>Server</span>
+                                    <span>{pkg.specs.server}</span>
                                 </div>
                                 <div className="spec-row">
-                                    <span>Email</span>
-                                    <span>{pkg.specs.email}</span>
+                                    <span>Waktu</span>
+                                    <span>{pkg.specs.waktu}</span>
                                 </div>
                                 <div className="spec-row">
-                                    <span>Hosting</span>
-                                    <span>{pkg.specs.hosting}</span>
+                                    <span>Revisi</span>
+                                    <span>{pkg.specs.revisi}</span>
                                 </div>
                             </div>
 
