@@ -1,0 +1,476 @@
+{
+    "hero": {
+        "tag": "Solusi Website End-to-End",
+        "title": "Wujudkan Website",
+        "titleHighlight": "Profesional",
+        "titleEnd": "untuk Bisnis Anda",
+        "description": "Dari desain hingga hosting, kami handle semuanya. Partner terpercaya untuk kehadiran digital bisnis Anda.",
+        "ctaPrimary": "Konsultasi Gratis",
+        "ctaSecondary": "Lihat Portfolio",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        "floatingCard": {
+            "title": "Website Live!",
+            "subtitle": "Deploy sukses"
+        },
+        "stats": [
+            {
+                "value": "87+",
+                "label": "Project"
+            },
+            {
+                "value": "38+",
+                "label": "Klien"
+            },
+            {
+                "value": "99.9%",
+                "label": "Uptime Server"
+            }
+        ]
+    },
+    "services": {
+        "tag": "Layanan",
+        "title": "Solusi Lengkap untuk Bisnis Digital",
+        "description": "Satu partner untuk semua kebutuhan website Anda",
+        "items": [
+            {
+                "icon": "code",
+                "title": "Web Development",
+                "desc": "Website modern, cepat, dan responsif dengan teknologi terkini"
+            },
+            {
+                "icon": "design",
+                "title": "UI/UX Design",
+                "desc": "Desain menarik dan user-friendly yang memperkuat brand Anda"
+            },
+            {
+                "icon": "hosting",
+                "title": "Hosting & Domain",
+                "desc": "Server cepat dan aman dengan uptime 99.9% guaranteed"
+            },
+            {
+                "icon": "maintenance",
+                "title": "Maintenance",
+                "desc": "Dukungan berkelanjutan agar website selalu optimal"
+            }
+        ]
+    },
+    "portfolio": {
+        "tag": "Layanan Kami",
+        "title": "Apa yang Bisa Kami Buat",
+        "description": "Solusi digital lengkap untuk berbagai kebutuhan bisnis Anda",
+        "items": [
+            {
+                "img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+                "title": "Landing Page",
+                "category": "Konversi Tinggi",
+                "desc": "Halaman promosi yang dirancang untuk mengkonversi pengunjung menjadi pelanggan dengan CTA yang efektif",
+                "features": [
+                    "One Page Design",
+                    "Fast Loading",
+                    "Mobile First",
+                    "A/B Testing Ready"
+                ]
+            },
+            {
+                "img": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+                "title": "Company Profile",
+                "category": "Profesional",
+                "desc": "Website perusahaan yang menampilkan kredibilitas, visi misi, dan layanan bisnis Anda secara profesional",
+                "features": [
+                    "Multi Halaman",
+                    "Tentang Kami",
+                    "Portfolio",
+                    "Kontak Form"
+                ]
+            },
+            {
+                "img": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+                "title": "E-Commerce",
+                "category": "Toko Online",
+                "desc": "Platform jual beli online lengkap dengan manajemen produk, keranjang, dan integrasi pembayaran",
+                "features": [
+                    "Product Catalog",
+                    "Shopping Cart",
+                    "Payment Gateway",
+                    "Order Tracking"
+                ]
+            },
+            {
+                "img": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+                "title": "Sistem Digital Custom",
+                "category": "Solusi Bisnis",
+                "desc": "Aplikasi web khusus sesuai kebutuhan operasional bisnis seperti CRM, inventory, atau booking system",
+                "features": [
+                    "Custom Dashboard",
+                    "User Management",
+                    "Report & Analytics",
+                    "API Integration"
+                ]
+            },
+            {
+                "img": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
+                "title": "Website Restoran & F&B",
+                "category": "Hospitality",
+                "desc": "Website untuk restoran, cafe, atau bisnis kuliner dengan fitur menu digital dan reservasi online",
+                "features": [
+                    "Digital Menu",
+                    "Online Reservation",
+                    "Gallery",
+                    "Location Map"
+                ]
+            },
+            {
+                "img": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80",
+                "title": "Portal Berita & Blog",
+                "category": "Media & Konten",
+                "desc": "Platform publikasi konten dengan CMS yang mudah dikelola dan SEO-friendly",
+                "features": [
+                    "CMS Dashboard",
+                    "Categories",
+                    "SEO Optimized",
+                    "Social Sharing"
+                ]
+            }
+        ]
+    },
+    "standardFeatures": {
+        "tag": "Fasilitas Standar",
+        "title": "Termasuk di Semua Paket",
+        "description": "Semua paket sudah dilengkapi dengan fasilitas lengkap berikut",
+        "items": [
+            {
+                "title": "Gratis Hosting",
+                "desc": "1 Tahun"
+            },
+            {
+                "title": "Email Bisnis",
+                "desc": "nama@domain.com"
+            },
+            {
+                "title": "SSL Certificate",
+                "desc": "HTTPS Aman"
+            },
+            {
+                "title": "Integrasi CDN",
+                "desc": "Cloudflare"
+            },
+            {
+                "title": "Panel Admin",
+                "desc": "Edit Mandiri"
+            }
+        ]
+    },
+    "pricing": {
+        "tag": "Harga",
+        "title": "Paket Pembuatan Website",
+        "description": "Pilih paket yang sesuai dengan kebutuhan dan budget Anda",
+        "packages": [
+            {
+                "id": "freelancer",
+                "tier": "STARTER",
+                "tierClass": "tier-1",
+                "name": "Freelancer / Personal",
+                "tagline": "Portofolio pribadi, CV online, atau landing page sederhana",
+                "priceFrom": "Rp 300rb",
+                "priceTo": "1jt",
+                "featured": false,
+                "premium": false,
+                "specs": {
+                    "desain": "Template Base",
+                    "halaman": "1 Halaman (Single Page)",
+                    "email": "Email Bisnis",
+                    "hosting": "Shared (Hemat)"
+                },
+                "features": [
+                    "Galeri Karya",
+                    "Tombol Kontak",
+                    "Link Sosmed"
+                ],
+                "buttonText": "Pilih Paket",
+                "buttonStyle": "secondary"
+            },
+            {
+                "id": "umkm",
+                "tier": "LOW-END",
+                "tierClass": "tier-2",
+                "name": "UMKM Mikro",
+                "tagline": "Pedagang/toko yang ingin online dan mudah ditemukan",
+                "priceFrom": "Rp 500rb",
+                "priceTo": "1,5jt",
+                "featured": false,
+                "premium": false,
+                "specs": {
+                    "desain": "Template Premium",
+                    "halaman": "Max 5 Halaman",
+                    "email": "Email Bisnis",
+                    "hosting": "Shared (Standard)"
+                },
+                "features": [
+                    "Tombol WA (Direct Chat)",
+                    "Google Maps Embed"
+                ],
+                "buttonText": "Pilih Paket",
+                "buttonStyle": "secondary"
+            },
+            {
+                "id": "organisasi",
+                "tier": "NON-PROFIT",
+                "tierClass": "tier-3",
+                "name": "Organisasi / Edukasi",
+                "tagline": "Yayasan, sekolah, atau komunitas yang butuh update rutin",
+                "priceFrom": "Rp 1jt",
+                "priceTo": "3jt",
+                "featured": true,
+                "premium": false,
+                "specs": {
+                    "desain": "Semi-Custom",
+                    "halaman": "10 + Blog Dinamis",
+                    "email": "Email Bisnis",
+                    "hosting": "Optimized"
+                },
+                "features": [
+                    "Widget Donasi",
+                    "Kalender Acara",
+                    "Download Area (PDF)",
+                    "Galeri Kegiatan"
+                ],
+                "buttonText": "Pilih Paket",
+                "buttonStyle": "primary"
+            },
+            {
+                "id": "bisnis",
+                "tier": "MID-MARKET",
+                "tierClass": "tier-4",
+                "name": "Bisnis Profesional",
+                "tagline": "Perusahaan (CV/PT) yang mengutamakan kredibilitas dan SEO",
+                "priceFrom": "Rp 2jt",
+                "priceTo": "5jt",
+                "featured": false,
+                "premium": false,
+                "specs": {
+                    "desain": "Custom UI/UX",
+                    "halaman": "15-20 Halaman",
+                    "email": "Email Bisnis",
+                    "hosting": "Cloud / High Performance"
+                },
+                "features": [
+                    "Google Analytics",
+                    "SEO On-Page Lanjutan",
+                    "Live Chat",
+                    "Multi-bahasa (opsional)"
+                ],
+                "buttonText": "Pilih Paket",
+                "buttonStyle": "secondary"
+            },
+            {
+                "id": "startup",
+                "tier": "HIGH-END",
+                "tierClass": "tier-5",
+                "name": "Startup Teknologi",
+                "tagline": "Aplikasi web dengan performa tinggi dan integrasi sistem",
+                "priceFrom": "Rp 5jt",
+                "priceTo": "15jt++",
+                "featured": false,
+                "premium": true,
+                "specs": {
+                    "desain": "Full Custom Design",
+                    "halaman": "Unlimited",
+                    "email": "Email Bisnis",
+                    "hosting": "VPS Managed"
+                },
+                "features": [
+                    "Integrasi API Pihak Ketiga",
+                    "Database Management",
+                    "Member Area / Login System",
+                    "Environment (Dev/Staging)"
+                ],
+                "buttonText": "Hubungi Kami",
+                "buttonStyle": "gradient"
+            }
+        ]
+    },
+    "maintenance": {
+        "tag": "Layanan Tambahan",
+        "title": "Jasa Maintenance & Pengelolaan",
+        "description": "Kelola sendiri (gratis) atau serahkan kepada kami",
+        "note": "* Biaya maintenance menyesuaikan dengan kompleksitas paket website Anda.",
+        "options": [
+            {
+                "id": "ondemand",
+                "badge": "OPSI A",
+                "name": "On-Demand (Per Kasus)",
+                "price": "Rp 150rb",
+                "priceSuffix": " / request",
+                "description": "Untuk klien yang jarang update, hanya bayar saat butuh bantuan revisi/error.",
+                "featured": false,
+                "features": [
+                    "Revisi konten",
+                    "Perbaikan error",
+                    "Update minor"
+                ]
+            },
+            {
+                "id": "monthly",
+                "badge": "OPSI B",
+                "name": "Kontrak Maintenance Bulanan",
+                "price": "Rp 300rb - 1jt",
+                "priceSuffix": " / bulan",
+                "description": "Layanan lengkap untuk website yang selalu optimal dan terupdate.",
+                "featured": true,
+                "features": [
+                    "Update Content (Artikel/Gambar/Produk) rutin",
+                    "Backup Data Mingguan/Bulanan",
+                    "Update Plugin/Core System & Security Patch",
+                    "Monitoring Uptime Server 24/7",
+                    "Laporan performa bulanan"
+                ]
+            }
+        ]
+    },
+    "about": {
+        "tag": "Tentang Kami",
+        "title": "Partner Terpercaya untuk Solusi Digital",
+        "description": "RSPACE Studio adalah studio digital yang berfokus pada pembuatan website profesional dengan pendekatan end-to-end. Kami tidak hanya membuat website — kami membangun solusi digital lengkap dari awal hingga akhir.",
+        "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80",
+        "highlights": [
+            {
+                "title": "Layanan End-to-End",
+                "desc": "Dari konsultasi, desain, development, hingga hosting dan maintenance"
+            },
+            {
+                "title": "Teknologi Modern",
+                "desc": "Menggunakan stack terkini untuk performa dan keamanan optimal"
+            },
+            {
+                "title": "Support Responsif",
+                "desc": "Tim support siap membantu kapan pun Anda membutuhkan"
+            }
+        ]
+    },
+    "testimonials": {
+        "tag": "Testimoni",
+        "title": "Apa Kata Klien Kami",
+        "items": [
+            {
+                "quote": "Tim RSPACE sangat profesional dan responsif. Website kami jadi lebih modern dan traffic meningkat signifikan!",
+                "name": "Budi Santoso",
+                "role": "CEO, PT Maju Bersama",
+                "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+            },
+            {
+                "quote": "Proses pengerjaan cepat dan hasilnya memuaskan. Support-nya juga responsif. Highly recommended!",
+                "name": "Sari Dewi",
+                "role": "Owner, Toko Sejahtera",
+                "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+            },
+            {
+                "quote": "Layanan end-to-end mereka sangat membantu. Tidak perlu pusing cari hosting dan maintenance sendiri.",
+                "name": "Ahmad Wijaya",
+                "role": "Manager, Resto Nusantara",
+                "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Siap Memulai Project Anda?",
+        "description": "Konsultasi gratis, tanpa komitmen. Mari diskusikan kebutuhan website Anda.",
+        "buttonText": "Hubungi Kami Sekarang"
+    },
+    "contact": {
+        "tag": "Kontak",
+        "title": "Mari Bicara",
+        "description": "Punya pertanyaan atau ingin mendiskusikan project? Hubungi kami, respons cepat dalam 24 jam.",
+        "info": {
+            "email": "hello@rspace.studio",
+            "phone": "+62 812 3456 7890",
+            "location": "Jakarta, Indonesia"
+        },
+        "form": {
+            "title": "Kirim Pesan",
+            "fields": {
+                "name": {
+                    "label": "Nama",
+                    "placeholder": "John Doe"
+                },
+                "email": {
+                    "label": "Email",
+                    "placeholder": "john@email.com"
+                },
+                "phone": {
+                    "label": "WhatsApp",
+                    "placeholder": "0812 3456 7890"
+                },
+                "package": {
+                    "label": "Paket yang Diminati",
+                    "placeholder": "Pilih paket..."
+                },
+                "message": {
+                    "label": "Pesan",
+                    "placeholder": "Ceritakan tentang project Anda..."
+                }
+            },
+            "packageOptions": [
+                {
+                    "value": "freelancer",
+                    "label": "Freelancer / Personal (Rp 300rb - 1jt)"
+                },
+                {
+                    "value": "umkm",
+                    "label": "UMKM Mikro (Rp 500rb - 1,5jt)"
+                },
+                {
+                    "value": "organisasi",
+                    "label": "Organisasi / Edukasi (Rp 1jt - 3jt)"
+                },
+                {
+                    "value": "bisnis",
+                    "label": "Bisnis Profesional (Rp 2jt - 5jt)"
+                },
+                {
+                    "value": "startup",
+                    "label": "Startup Teknologi (Rp 5jt - 15jt++)"
+                },
+                {
+                    "value": "maintenance",
+                    "label": "Jasa Maintenance"
+                },
+                {
+                    "value": "custom",
+                    "label": "Custom Request"
+                }
+            ],
+            "submitText": "Kirim Pesan"
+        }
+    },
+    "faq": {
+        "tag": "Edukasi & FAQ",
+        "title": "Kenapa Website & RSPACE?",
+        "description": "Pahami mengapa bisnis Anda butuh 'Rumah Digital' dan bagaimana kami mewujudkannya.",
+        "items": [
+            {
+                "question": "Apa bedanya punya Website sendiri dengan jualan di Media Sosial?",
+                "answer": "Media sosial ibarat 'lapak sewaan' di mall; ramai tapi Anda terikat aturan orang lain. Website adalah 'Kantor/Properti Digital' milik Anda sendiri. Di sini Anda punya kendali penuh, tidak takut akun terkena suspend, dan terlihat jauh lebih kredibel sebagai bisnis yang serius."
+            },
+            {
+                "question": "Mengapa Business Owner seperti saya wajib punya website sekarang?",
+                "answer": "Karena perilaku konsumen sudah berubah. Sebelum membeli, orang akan Googling nama bisnis Anda. Website bekerja sebagai 'Salesman 24 Jam' yang meyakinkan calon klien bahkan saat Anda tidur, sekaligus menjangkau pasar yang lebih luas di luar followers sosmed Anda."
+            },
+            {
+                "question": "Saya tertarik, tapi butuh cepat. Berapa lama RSPACE bisa menyelesaikannya?",
+                "answer": "Kami paham bisnis butuh kecepatan. Tim RSPACE siap mengeksekusi website Paket Personal/Freelancer hanya dalam 3-7 hari kerja. Untuk UMKM hingga Corporate, kami butuh 5-21 hari kerja. Kami bekerja efisien agar momentum bisnis Anda tidak hilang."
+            },
+            {
+                "question": "Apakah saya harus pusing mengurus teknis seperti Hosting dan Domain?",
+                "answer": "Tidak perlu. Di RSPACE, kami menerapkan sistem 'Terima Beres'. Semua paket sudah termasuk Gratis Hosting 1 Tahun dan kami bantu uruskan pembelian Domain (.com dll). Fokus Anda hanya pada bisnis, biarkan kami yang mengurus teknisnya."
+            },
+            {
+                "question": "Saya tidak paham IT (Gaptek), apakah nanti saya bisa update konten sendiri?",
+                "answer": "Tentu saja! Misi kami adalah mempermudah teknologi. Website RSPACE dilengkapi Panel Admin yang sangat mudah (seperti update status Facebook). Kami juga sediakan panduan lengkap. Jadi, Anda tetap memegang kendali penuh atas isi website Anda."
+            },
+            {
+                "question": "Bagaimana cara order jasa pembuatan website di RSPACE?",
+                "answer": "Sangat simpel & aman. Konsultasikan kebutuhan Anda dengan kami -> Pilih Paket -> Bayar DP 50% -> Kami kerjakan -> Pelunasan setelah website jadi. Hubungi kami sekarang untuk mengamankan slot pengerjaan Anda."
+            }
+        ]
+    }
+}
