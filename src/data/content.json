@@ -1,4 +1,63 @@
 {
+    "site": {
+        "name": "RSPACE STUDIO.",
+        "shortName": "RSPACE",
+        "logoLetter": "R",
+        "tagline": "Jasa Pembuatan Website Profesional End-to-End",
+        "description": "RSPACE Studio menyediakan layanan pembuatan website profesional dari desain hingga hosting. Solusi digital lengkap, modern, dan SEO optimal untuk bisnis Anda.",
+        "keywords": [
+            "RSPACE Studio",
+            "jasa pembuatan website",
+            "web developer Indonesia",
+            "jasa hosting website",
+            "company profile website",
+            "website profesional",
+            "web design modern",
+            "jasa SEO website"
+        ],
+        "author": "RSPACE Studio",
+        "url": "https://rspace.studio/",
+        "whatsapp": "6285111238009",
+        "whatsappUrl": "https://wa.me/6285111238009"
+    },
+    "navbar": {
+        "links": [
+            {
+                "label": "Layanan",
+                "href": "/layanan"
+            },
+            {
+                "label": "Portfolio",
+                "href": "/portfolio"
+            },
+            {
+                "label": "Harga",
+                "href": "/harga"
+            },
+            {
+                "label": "Tentang",
+                "href": "/tentang"
+            }
+        ],
+        "cta": {
+            "label": "Hubungi Kami",
+            "href": "/kontak"
+        }
+    },
+    "marquee": {
+        "items": [
+            "Website Profesional",
+            "Performa Tinggi",
+            "Desain Modern",
+            "Loading Cepat",
+            "SSL Gratis",
+            "Email Bisnis",
+            "Hosting Gratis 1 Tahun",
+            "Panel Admin",
+            "Support 24/7",
+            "SEO Optimized"
+        ]
+    },
     "hero": {
         "tag": "Mitra Transformasi Digital",
         "title": "Ubah Website Menjadi",
@@ -399,7 +458,8 @@
     "cta": {
         "title": "Jangan Biarkan Bisnis Anda Tertinggal",
         "description": "Kompetitor Anda sudah mulai Go Digital. Amankan posisi pasar Anda sekarang dengan infrastruktur web yang tepat.",
-        "buttonText": "Konsultasi Gratis Sekarang"
+        "buttonText": "Konsultasi Gratis Sekarang",
+        "buttonHref": "/kontak"
     },
     "contact": {
         "tag": "Hubungi Kami",
@@ -466,6 +526,12 @@
             ],
             "submitText": "Jadwalkan Diskusi"
         }
+    },
+    "footer": {
+        "description": "Solusi digital end-to-end untuk bisnis Anda. Dari desain hingga hosting, kami adalah partner terpercaya Anda.",
+        "copyright": "© {year} RSPACE Studio. All rights reserved.",
+        "navTitle": "Navigasi",
+        "contactTitle": "Kontak"
     },
     "faq": {
         "tag": "Edukasi Bisnis",

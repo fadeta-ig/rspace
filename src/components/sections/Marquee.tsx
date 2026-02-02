@@ -1,17 +1,9 @@
 "use client";
 
-const marqueeItems = [
-    "Website Profesional",
-    "Performa Tinggi",
-    "Desain Modern",
-    "Loading Cepat",
-    "SSL Gratis",
-    "Email Bisnis",
-    "Hosting Gratis 1 Tahun",
-    "Panel Admin",
-    "Support 24/7",
-    "SEO Optimized",
-];
+import content from "@/data/content.json";
+
+const { marquee } = content;
+const marqueeItems = marquee.items;
 
 export default function Marquee() {
     return (

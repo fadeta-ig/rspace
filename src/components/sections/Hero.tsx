@@ -4,7 +4,7 @@ import { useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import content from "@/data/content.json";
 
-const { hero } = content;
+const { hero, site } = content;
 
 interface Particle {
     x: number;
@@ -165,9 +165,9 @@ export default function Hero() {
                 {/* Logo with Brand Name */}
                 <div className="hero-brand opacity-0">
                     <div className="logo-icon">
-                        <span>R</span>
+                        <span>{site.logoLetter}</span>
                     </div>
-                    <span className="hero-brand-name">RSPACE STUDIO.</span>
+                    <span className="hero-brand-name">{site.name}</span>
                 </div>
 
                 {/* Main Heading - Simple gradient text */}

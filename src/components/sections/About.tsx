@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import content from "@/data/content.json";
 
-const { about } = content;
+const { about, site } = content;
 
 export default function About() {
     const sectionRef = useRef<HTMLElement>(null);
@@ -57,7 +57,7 @@ export default function About() {
                         <div className="img-container">
                             <Image
                                 src={about.image}
-                                alt="RSPACE Studio Team"
+                                alt={`${site.name} Team`}
                                 width={650}
                                 height={500}
                                 className="about-img-lux"

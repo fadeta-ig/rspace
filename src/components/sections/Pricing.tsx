@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import content from "@/data/content.json";
 
-const { pricing } = content;
+const { pricing, site } = content;
 
 interface Package {
     id: string;
@@ -137,7 +137,7 @@ export default function Pricing() {
 
                             {/* Button */}
                             <a
-                                href="https://wa.me/6285111238009"
+                                href={site.whatsappUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`pkg-btn ${pkg.buttonStyle}`}
