@@ -56,6 +56,15 @@ body {
   color: white;
 }
 
+/* Luxury Transitions */
+.ease-luxury {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-luxury {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ===== HERO SECTION - MODERN DESIGN ===== */
 .hero-section {
   position: relative;
@@ -132,12 +141,12 @@ body {
 
 .hero-heading {
   font-family: 'Google Sans Flex', -apple-system, sans-serif;
-  font-size: 74px;
+  font-size: clamp(2.5rem, 8vw, 4.6rem);
   font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   max-width: 900px;
 }
 
@@ -406,25 +415,31 @@ body {
 }
 
 /* Buttons */
-.btn-primary {
+.btn-primary-lux {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background: var(--accent-gradient);
+  padding: 0.6rem 1.25rem;
+  background: #002B7F;
   color: white;
   font-weight: 600;
-  font-size: 0.875rem;
-  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 10px rgba(0, 43, 127, 0.1);
 }
 
-.btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+.btn-primary-lux:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 43, 127, 0.2);
+  background: #001D56;
+}
+
+.btn-primary-lux:active {
+  transform: translateY(0);
 }
 
 .btn-secondary {
@@ -643,6 +658,7 @@ body {
   margin-bottom: 0.625rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

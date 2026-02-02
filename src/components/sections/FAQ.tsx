@@ -63,11 +63,11 @@ export default function FAQ() {
                                 className={`faq-item-animation opacity-0 group border border-slate-100 rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'border-accent-primary bg-slate-50/50' : 'hover:border-slate-300'}`}
                             >
                                 <button
-                                    className="w-full text-left px-8 py-6 flex items-center justify-between gap-4"
+                                    className="w-full text-left px-6 md:px-8 py-5 md:py-6 flex items-center justify-between gap-4"
                                     onClick={() => toggleItem(index)}
                                     aria-expanded={openIndex === index}
                                 >
-                                    <span className={`text-base font-semibold transition-colors duration-300 ${openIndex === index ? 'text-accent-primary' : 'text-slate-700 group-hover:text-accent-primary'}`}>{item.question}</span>
+                                    <span className={`text-sm md:text-base font-semibold transition-colors duration-300 ${openIndex === index ? 'text-accent-primary' : 'text-slate-700 group-hover:text-accent-primary'}`}>{item.question}</span>
                                     <span className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300 ${openIndex === index ? 'bg-accent-primary border-accent-primary text-white' : 'border-slate-200 text-slate-400 group-hover:border-accent-primary group-hover:text-accent-primary'}`}>
                                         <svg
                                             className={`w-3 h-3 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
@@ -82,7 +82,7 @@ export default function FAQ() {
                                 <div
                                     className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                                 >
-                                    <div className="px-8 pb-8">
+                                    <div className="px-6 md:px-8 pb-6 md:pb-8">
                                         <p className="text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-6">
                                             {item.answer}
                                         </p>

@@ -140,7 +140,7 @@ export default function Pricing() {
                                 href={site.whatsappUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`pkg-btn ${pkg.buttonStyle}`}
+                                className={`pkg-btn ${pkg.buttonStyle} ${pkg.featured ? "btn-primary-lux" : ""}`}
                             >
                                 {pkg.buttonText}
                             </a>

@@ -61,7 +61,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Grid */}
-                <div className="portfolio-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="portfolio-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {(portfolio.items as PortfolioItem[]).map((item, index) => (
                         <div
                             key={index}
@@ -83,7 +83,7 @@ export default function Portfolio() {
                             </div>
 
                             {/* Content */}
-                            <div className="p-8">
+                            <div className="p-6 md:p-8">
                                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">{item.category}</span>
                                 <h3 className="text-xl font-semibold text-accent-primary mb-3">{item.title}</h3>
                                 <p className="text-slate-500 text-sm leading-relaxed mb-6">{item.desc}</p>
@@ -103,7 +103,7 @@ export default function Portfolio() {
 
                                 {/* Action Bar */}
                                 <div className="flex items-center justify-between pt-6 border-t border-slate-50">
-                                    <span className="text-xs font-bold text-accent-primary flex items-center gap-2 group-hover:gap-3 transition-all">
+                                    <span className="text-xs font-bold text-accent-primary flex items-center gap-2 group-hover:gap-3 transition-all cursor-pointer">
                                         {activeIndex === index ? 'Tutup Detail' : 'Lihat Detail'}
                                         <svg
                                             className={`w-4 h-4 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}

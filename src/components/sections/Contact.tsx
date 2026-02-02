@@ -89,7 +89,7 @@ export default function Contact() {
 
                     {/* Right Side: Form */}
                     <div className="lg:col-span-7 contact-form-animation opacity-0">
-                        <div className="bg-slate-50/50 border border-slate-100 p-10 rounded-[2.5rem] hover:shadow-2xl transition-shadow duration-500">
+                        <div className="bg-slate-50/50 border border-slate-100 p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] hover:shadow-2xl transition-shadow duration-500">
                             <h3 className="text-xl font-semibold mb-8">{contact.form.title}</h3>
                             <form className="space-y-6">
                                 <div className="grid md:grid-cols-2 gap-6">

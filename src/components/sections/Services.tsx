@@ -51,10 +51,10 @@ export default function Services() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {services.items.map((service, i) => (
-                        <div key={i} className="service-card group border border-slate-100 p-8 rounded-2xl hover:border-accent-primary transition-all duration-300 opacity-0 bg-slate-50/30 hover:bg-white hover:shadow-2xl">
-                            <div className="icon-box mb-6 bg-[#002B7F] text-white w-12 h-12 flex items-center justify-center rounded-xl group-hover:scale-110 transition-transform duration-300">
+                        <div key={i} className="service-card group border border-slate-100 p-6 md:p-8 rounded-2xl hover:border-accent-primary transition-all duration-500 opacity-0 bg-slate-50/30 hover:bg-white hover:shadow-2xl">
+                            <div className="icon-box mb-6 bg-[#002B7F] text-white w-12 h-12 flex items-center justify-center rounded-xl group-hover:scale-110 transition-transform duration-500">
                                 <ServiceIcon type={service.icon} />
                             </div>
                             <h3 className="text-lg font-semibold mb-3 group-hover:text-accent-primary transition-colors">{service.title}</h3>

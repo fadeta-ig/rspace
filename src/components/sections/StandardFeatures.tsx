@@ -18,11 +18,11 @@ export default function StandardFeatures() {
                     </p>
                 </div>
 
-                <div className="features-grid">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
                     {standardFeatures.items.map((feature, i) => (
-                        <div key={i} className="feature-card">
-                            <h4 className="feature-card-title">{feature.title}</h4>
-                            <p className="feature-card-desc">{feature.desc}</p>
+                        <div key={i} className="feature-card group hover:bg-white/20 transition-all duration-500">
+                            <h4 className="feature-card-title group-hover:scale-105 transition-transform">{feature.title}</h4>
+                            <p className="feature-card-desc opacity-70 group-hover:opacity-100 transition-opacity">{feature.desc}</p>
                         </div>
                     ))}
                 </div>
