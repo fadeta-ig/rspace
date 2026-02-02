@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import content from "@/data/content.json";
 
 const { cta } = content;
@@ -41,12 +42,12 @@ export default function CTA() {
                 <p className="text-slate-400 mb-10 max-w-2xl mx-auto text-sm leading-relaxed">
                     {cta.description}
                 </p>
-                <a href="#kontak" className="inline-flex items-center gap-3 bg-white text-[#002B7F] font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transform active:scale-95 transition-all text-sm">
+                <Link href="/kontak" className="inline-flex items-center gap-3 bg-white text-[#002B7F] font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transform active:scale-95 transition-all text-sm">
                     {cta.buttonText}
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                </a>
+                </Link>
             </div>
         </section>
     );

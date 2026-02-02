@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "RSPACE Studio | Jasa Pembuatan Website Profesional End-to-End",
@@ -49,19 +50,19 @@ export default function RootLayout({
           <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
             <div className="container px-4 lg:px-8">
               <div className="flex items-center justify-between h-16">
-                <a href="#" className="flex items-center gap-2 group">
-                  <div className="w-8 h-8 rounded-lg bg-black flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                <Link href="/" className="flex items-center gap-2 group">
+                  <div className="w-8 h-8 rounded-lg bg-[#002B7F] flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                     <span className="text-white font-bold text-sm">R</span>
                   </div>
                   <span className="font-bold text-lg text-black tracking-tight">RSPACE STUDIO.</span>
-                </a>
+                </Link>
 
                 <nav className="hidden md:flex items-center gap-6">
-                  <a href="#layanan" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">Layanan</a>
-                  <a href="#portfolio" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">Portfolio</a>
-                  <a href="#harga" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">Harga</a>
-                  <a href="#tentang" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">Tentang</a>
-                  <a href="#kontak" className="btn-primary">Hubungi Kami</a>
+                  <Link href="/layanan" className="text-gray-600 hover:text-[#002B7F] text-sm font-medium transition-colors">Layanan</Link>
+                  <Link href="/portfolio" className="text-gray-600 hover:text-[#002B7F] text-sm font-medium transition-colors">Portfolio</Link>
+                  <Link href="/harga" className="text-gray-600 hover:text-[#002B7F] text-sm font-medium transition-colors">Harga</Link>
+                  <Link href="/tentang" className="text-gray-600 hover:text-[#002B7F] text-sm font-medium transition-colors">Tentang</Link>
+                  <Link href="/kontak" className="btn-primary bg-[#002B7F] hover:bg-[#001D56]">Hubungi Kami</Link>
                 </nav>
 
                 <button className="md:hidden p-2" aria-label="Menu">
@@ -80,12 +81,12 @@ export default function RootLayout({
             <div className="container px-4 lg:px-8 py-12">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div className="md:col-span-2">
-                  <div className="flex items-center gap-2 mb-4 group cursor-pointer">
+                  <Link href="/" className="flex items-center gap-2 mb-4 group cursor-pointer">
                     <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                      <span className="text-black font-bold text-sm">R</span>
+                      <span className="text-[#002B7F] font-bold text-sm">R</span>
                     </div>
                     <span className="font-bold text-lg text-white tracking-tight">RSPACE STUDIO.</span>
-                  </div>
+                  </Link>
                   <p className="text-gray-400 text-sm max-w-sm">
                     Solusi digital end-to-end untuk bisnis Anda. Dari desain hingga hosting, kami adalah partner terpercaya Anda.
                   </p>
@@ -94,10 +95,10 @@ export default function RootLayout({
                 <div>
                   <h4 className="font-semibold mb-3 text-sm">Navigasi</h4>
                   <ul className="space-y-2 text-sm text-gray-400">
-                    <li><a href="#layanan" className="hover:text-white transition-colors">Layanan</a></li>
-                    <li><a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
-                    <li><a href="#harga" className="hover:text-white transition-colors">Harga</a></li>
-                    <li><a href="#tentang" className="hover:text-white transition-colors">Tentang</a></li>
+                    <li><Link href="/layanan" className="hover:text-white transition-colors">Layanan</Link></li>
+                    <li><Link href="/portfolio" className="hover:text-white transition-colors">Portfolio</Link></li>
+                    <li><Link href="/harga" className="hover:text-white transition-colors">Harga</Link></li>
+                    <li><Link href="/tentang" className="hover:text-white transition-colors">Tentang</Link></li>
                   </ul>
                 </div>
 

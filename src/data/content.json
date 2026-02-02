@@ -35,22 +35,46 @@
             {
                 "icon": "code",
                 "title": "High-Performance Web Dev",
-                "desc": "Website bisnis yang dirancang untuk kecepatan load <3 detik dan SEO-ready sejak baris kode pertama."
+                "desc": "Website bisnis yang dirancang untuk kecepatan load <3 detik dan SEO-ready sejak baris kode pertama.",
+                "reasons": [
+                    "Kecepatan Luar Biasa: Mengurangi bounce rate dan meningkatkan kepuasan pengguna.",
+                    "SEO-Optimized: Struktur kode bersih yang memudahkan Google mengindeks bisnis Anda.",
+                    "Konversi Tinggi: Desain UX yang fokus mengarahkan pengunjung menjadi prospek.",
+                    "Skalabilitas: Website yang siap tumbuh seiring perkembangan bisnis Anda."
+                ]
             },
             {
                 "icon": "server",
                 "title": "Managed VPS & Cloud",
-                "desc": "Penyewaan dan pengelolaan server privat (VPS) untuk aplikasi bisnis yang butuh resource tinggi dan keamanan data."
+                "desc": "Penyewaan dan pengelolaan server privat (VPS) untuk aplikasi bisnis yang butuh resource tinggi dan keamanan data.",
+                "reasons": [
+                    "Performa Stabil: Resource dedicated yang tidak terbagi dengan pengguna lain.",
+                    "Keamanan Maksimal: Isolasi data penuh dan setup firewall yang ketat.",
+                    "Kontrol Penuh: Kebebasan kustomisasi lingkungan server sesuai kebutuhan aplikasi.",
+                    "Uptime Terjamin: Monitoring 24/7 untuk memastikan bisnis Anda selalu online."
+                ]
             },
             {
                 "icon": "cart",
                 "title": "E-Commerce & Funnel",
-                "desc": "Membangun toko online dan landing page yang fokus pada alur penjualan (sales journey) yang efektif."
+                "desc": "Membangun toko online dan landing page yang fokus pada alur penjualan (sales journey) yang efektif.",
+                "reasons": [
+                    "Sistem Otomatis: Sinkronisasi stok dan hitung ongkir otomatis tanpa ribet.",
+                    "Ownership Data: Miliki database pelanggan Anda sendiri, bukan milik marketplace.",
+                    "Psikologi Penjualan: Alur checkout yang minim hambatan untuk meningkatkan profit.",
+                    "Integrasi Payment: Mendukung berbagai metode pembayaran populer Indonesia."
+                ]
             },
             {
                 "icon": "maintenance",
                 "title": "Digital Asset Care",
-                "desc": "Layanan maintenance proaktif. Kami menjaga 'kantor digital' Anda tetap bersih, aman, dan beroperasi 24/7."
+                "desc": "Layanan maintenance proaktif. Kami menjaga 'kantor digital' Anda tetap bersih, aman, dan beroperasi 24/7.",
+                "reasons": [
+                    "Bebas Khawatir: Pemantauan keamanan dan update rutin dilakukan oleh ahlinya.",
+                    "Backup Berkala: Perlindungan data bisnis dari kehilangan atau kerusakan tak terduga.",
+                    "Efisiensi Biaya: Lebih hemat biaya dibanding mempekerjakan staff IT dedicated.",
+                    "Update Konten: Tim kami siap membantu melakukan perubahan konten kapan saja."
+                ]
             }
         ]
     },
