@@ -31,7 +31,7 @@ const tierColors: { [key: string]: string } = {
     "tier-2": "bg-slate-200 text-slate-700 px-2 py-0.5",
     "tier-3": "bg-slate-800 text-white px-2 py-0.5",
     "tier-4": "bg-slate-900 text-white px-2 py-0.5",
-    "tier-5": "bg-black text-white px-2 py-0.5",
+    "tier-5": "bg-[#002B7F] text-white px-2 py-0.5",
 };
 
 export default function Pricing() {
@@ -71,7 +71,7 @@ export default function Pricing() {
             <div className="container px-4 lg:px-8">
                 {/* Header */}
                 <div className="pricing-header text-center mb-8 opacity-0">
-                    <span className="inline-block px-3 py-1 bg-slate-900 text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-2">
+                    <span className="inline-block px-3 py-1 bg-[#002B7F] text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-2">
                         {pricing.tag}
                     </span>
                     <h2 className="text-2xl font-semibold text-gray-900 mb-2">{pricing.title}</h2>

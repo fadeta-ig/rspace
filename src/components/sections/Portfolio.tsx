@@ -53,10 +53,10 @@ export default function Portfolio() {
             <div className="container px-4 lg:px-8">
                 {/* Header */}
                 <div className="portfolio-header opacity-0 mb-16 text-center">
-                    <span className="inline-block px-3 py-1 bg-black text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-4">
+                    <span className="inline-block px-3 py-1 bg-accent-primary text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-4">
                         {portfolio.tag}
                     </span>
-                    <h2 className="text-4xl font-semibold text-black mb-4">{portfolio.title}</h2>
+                    <h2 className="text-4xl font-semibold text-accent-primary mb-4">{portfolio.title}</h2>
                     <p className="text-slate-500 max-w-2xl mx-auto text-sm leading-relaxed">{portfolio.description}</p>
                 </div>
 
@@ -65,7 +65,7 @@ export default function Portfolio() {
                     {(portfolio.items as PortfolioItem[]).map((item, index) => (
                         <div
                             key={index}
-                            className={`portfolio-card group relative bg-white border border-slate-100 rounded-3xl overflow-hidden transition-all duration-500 opacity-0 hover:border-black hover:shadow-2xl ${activeIndex === index ? 'ring-2 ring-black' : ''}`}
+                            className={`portfolio-card group relative bg-white border border-slate-100 rounded-3xl overflow-hidden transition-all duration-500 opacity-0 hover:border-accent-primary hover:shadow-2xl ${activeIndex === index ? 'ring-2 ring-accent-primary' : ''}`}
                             onMouseEnter={() => setHoveredIndex(index)}
                             onMouseLeave={() => setHoveredIndex(null)}
                             onClick={() => setActiveIndex(activeIndex === index ? null : index)}
@@ -79,13 +79,13 @@ export default function Portfolio() {
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
+                                <div className="absolute inset-0 bg-[#002B7F]/0 group-hover:bg-[#002B7F]/20 transition-colors duration-500" />
                             </div>
 
                             {/* Content */}
                             <div className="p-8">
                                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">{item.category}</span>
-                                <h3 className="text-xl font-semibold text-black mb-3">{item.title}</h3>
+                                <h3 className="text-xl font-semibold text-accent-primary mb-3">{item.title}</h3>
                                 <p className="text-slate-500 text-sm leading-relaxed mb-6">{item.desc}</p>
 
                                 {/* Features Panel (Dynamic) */}
@@ -103,7 +103,7 @@ export default function Portfolio() {
 
                                 {/* Action Bar */}
                                 <div className="flex items-center justify-between pt-6 border-t border-slate-50">
-                                    <span className="text-xs font-bold text-black flex items-center gap-2 group-hover:gap-3 transition-all">
+                                    <span className="text-xs font-bold text-accent-primary flex items-center gap-2 group-hover:gap-3 transition-all">
                                         {activeIndex === index ? 'Tutup Detail' : 'Lihat Detail'}
                                         <svg
                                             className={`w-4 h-4 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}

@@ -39,13 +39,13 @@ export default function Contact() {
     }, []);
 
     return (
-        <section id="kontak" ref={sectionRef} className="section bg-white text-black py-24">
+        <section id="kontak" ref={sectionRef} className="section bg-white text-accent-primary py-24">
             <div className="container px-4 lg:px-8">
                 <div className="grid lg:grid-cols-12 gap-16 items-start">
                     {/* Left Side: Info */}
                     <div className="lg:col-span-5 space-y-8">
                         <div className="contact-info-stagger opacity-0">
-                            <span className="inline-block px-3 py-1 bg-black text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-4">
+                            <span className="inline-block px-3 py-1 bg-[#002B7F] text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-4">
                                 {contact.tag}
                             </span>
                             <h2 className="text-4xl font-semibold mb-6 leading-tight">{contact.title}</h2>
@@ -159,7 +159,7 @@ export default function Contact() {
                                     ></textarea>
                                 </div>
 
-                                <button type="submit" className="w-full bg-black text-white font-bold py-5 rounded-xl hover:bg-slate-900 transform active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                                <button type="submit" className="w-full bg-[#002B7F] text-white font-bold py-5 rounded-xl hover:bg-[#001D56] transform active:scale-[0.98] transition-all flex items-center justify-center gap-3">
                                     {contact.form.submitText}
                                     <svg className="w-4 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

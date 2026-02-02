@@ -43,10 +43,10 @@ export default function FAQ() {
     }, []);
 
     return (
-        <section id="faq" ref={sectionRef} className="section bg-white text-black py-24">
+        <section id="faq" ref={sectionRef} className="section bg-white text-accent-primary py-24">
             <div className="container px-4 lg:px-8">
                 <div className="faq-header text-center mb-16 opacity-0">
-                    <span className="inline-block px-3 py-1 bg-black text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-4">
+                    <span className="inline-block px-3 py-1 bg-[#002B7F] text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-4">
                         {faq.tag}
                     </span>
                     <h2 className="text-4xl font-semibold mb-6">{faq.title}</h2>
@@ -60,15 +60,15 @@ export default function FAQ() {
                         {faq.items.map((item, index) => (
                             <div
                                 key={index}
-                                className={`faq-item-animation opacity-0 group border border-slate-100 rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'border-black bg-slate-50/50' : 'hover:border-slate-300'}`}
+                                className={`faq-item-animation opacity-0 group border border-slate-100 rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'border-accent-primary bg-slate-50/50' : 'hover:border-slate-300'}`}
                             >
                                 <button
                                     className="w-full text-left px-8 py-6 flex items-center justify-between gap-4"
                                     onClick={() => toggleItem(index)}
                                     aria-expanded={openIndex === index}
                                 >
-                                    <span className={`text-base font-semibold transition-colors duration-300 ${openIndex === index ? 'text-black' : 'text-slate-700 group-hover:text-black'}`}>{item.question}</span>
-                                    <span className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300 ${openIndex === index ? 'bg-black border-black text-white' : 'border-slate-200 text-slate-400 group-hover:border-black group-hover:text-black'}`}>
+                                    <span className={`text-base font-semibold transition-colors duration-300 ${openIndex === index ? 'text-accent-primary' : 'text-slate-700 group-hover:text-accent-primary'}`}>{item.question}</span>
+                                    <span className={`flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-300 ${openIndex === index ? 'bg-accent-primary border-accent-primary text-white' : 'border-slate-200 text-slate-400 group-hover:border-accent-primary group-hover:text-accent-primary'}`}>
                                         <svg
                                             className={`w-3 h-3 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
                                             fill="none"

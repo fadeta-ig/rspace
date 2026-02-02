@@ -11,12 +11,12 @@
   --text-secondary: #475569;
   --text-muted: #94a3b8;
 
-  --accent-primary: #000000;
-  --accent-secondary: #0f172a;
-  --accent-gradient: linear-gradient(135deg, #000000 0%, #334155 100%);
+  --accent-primary: #002B7F;
+  --accent-secondary: #002B7F;
+  --accent-gradient: linear-gradient(135deg, #002B7F 0%, #1e40af 100%);
 
   --border-color: #e2e8f0;
-  --border-hover: #000000;
+  --border-hover: #002B7F;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -103,11 +103,11 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #000000;
+  background: #002B7F;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 43, 127, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -142,7 +142,7 @@ body {
 }
 
 .hero-gradient-text {
-  background: linear-gradient(90deg, #000000, #475569, #94a3b8, #000000);
+  background: linear-gradient(90deg, #002B7F, #1e40af, #3b82f6, #002B7F);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -187,14 +187,14 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: #000000;
+  background: #002B7F;
   color: white;
   font-weight: 500;
   font-size: 0.875rem;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 43, 127, 0.1);
 }
 
 .hero-btn-primary:hover {
@@ -1007,7 +1007,7 @@ body {
 }
 
 .pkg-btn.primary {
-  background: #000000;
+  background: #002B7F;
   color: white;
 }
 
