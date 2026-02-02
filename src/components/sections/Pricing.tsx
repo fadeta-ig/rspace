@@ -137,7 +137,7 @@ export default function Pricing() {
 
                             {/* Button */}
                             <a
-                                href="https://wa.me/6282232538778"
+                                href="https://wa.me/6285111238009"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`pkg-btn ${pkg.buttonStyle}`}

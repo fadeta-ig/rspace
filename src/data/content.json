@@ -407,7 +407,7 @@
         "description": "Ceritakan target bisnis Anda, kami akan berikan rekomendasi teknis yang paling efisien. Tidak beli tidak masalah.",
         "info": {
             "email": "business@rspace.studio",
-            "phone": "+62 812 3456 7890",
+            "phone": "+62 851 1123 8009",
             "location": "Jakarta, Indonesia"
         },
         "form": {
@@ -423,7 +423,7 @@
                 },
                 "phone": {
                     "label": "WhatsApp",
-                    "placeholder": "0812 3456 7890"
+                    "placeholder": "0851 1123 8009"
                 },
                 "package": {
                     "label": "Kebutuhan Bisnis",

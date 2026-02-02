@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "RSPACE Studio | Jasa Pembuatan Website Profesional End-to-End",
@@ -106,7 +107,7 @@ export default function RootLayout({
                   <h4 className="font-semibold mb-3 text-sm">Kontak</h4>
                   <ul className="space-y-2 text-sm text-gray-400">
                     <li>hello@rspace.studio</li>
-                    <li>+62 812 3456 7890</li>
+                    <li>+62 851 1123 8009</li>
                     <li>Jakarta, Indonesia</li>
                   </ul>
                 </div>
@@ -117,6 +118,7 @@ export default function RootLayout({
               </div>
             </div>
           </footer>
+          <WhatsAppButton />
         </div>
       </body>
     </html>
