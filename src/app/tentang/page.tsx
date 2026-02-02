@@ -38,7 +38,7 @@ export default function AboutPage() {
                             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
                                 <p>{about.description}</p>
                                 <p>
-                                    Di RSPACE, kami percaya bahwa kegagalan banyak aset digital bukan karena kurangnya fitur, tapi karena kurangnya keselarasan dengan strategi bisnis. Itulah sebabnya setiap baris kode yang kami tulis dimulai dengan pemahaman mendalam tentang siapa pelanggan Anda dan bagaimana mereka berinteraksi dengan produk Anda.
+                                    Di RSPACE,  kami percaya bahwa kegagalan banyak aset digital bukan karena kurangnya fitur, tapi karena kurangnya keselarasan dengan strategi bisnis. Itulah sebabnya setiap baris kode yang kami tulis dimulai dengan pemahaman mendalam tentang siapa pelanggan Anda dan bagaimana mereka berinteraksi dengan produk Anda.
                                 </p>
                             </div>
                         </div>
