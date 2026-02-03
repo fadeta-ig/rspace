@@ -18,7 +18,7 @@ export default function TechStack() {
 
             gsap.to(scrollContainer, {
                 x: `-${width}px`,
-                duration: 25,
+                duration: 40, // Very slow for premium smooth feel
                 ease: "none",
                 repeat: -1,
             });
@@ -26,33 +26,28 @@ export default function TechStack() {
     }, []);
 
     return (
-        <section className="py-20 bg-white overflow-hidden border-y border-gray-100">
-            <div className="container px-4 mb-12 text-center">
-                <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-slate-400 mb-2">
-                    {techStack.title}
-                </h2>
-            </div>
+        <section className="py-12 bg-white overflow-hidden border-y border-gray-50/50">
+            <div className="relative max-w-7xl mx-auto">
+                {/* Minimalist Title */}
+                <div className="flex justify-center mb-10">
+                    <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-slate-300 border-b border-slate-100 pb-2">
+                        {techStack.title}
+                    </span>
+                </div>
 
-            <div className="relative">
                 {/* Gradient Fades */}
-                <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
-                <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+                <div className="absolute inset-y-0 left-0 w-32 md:w-48 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+                <div className="absolute inset-y-0 right-0 w-32 md:w-48 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
 
                 <div
                     ref={scrollRef}
-                    className="flex items-center gap-16 whitespace-nowrap"
+                    className="flex items-center gap-16 md:gap-24 whitespace-nowrap"
                 >
-                    {techStack.items.map((tech, i) => (
-                        <div key={i} className="flex items-center gap-4 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default group">
-                            <TechIcon type={tech.icon} className="w-10 h-10 transition-transform duration-500 group-hover:scale-110" />
-                            <span className="text-lg font-bold tracking-tight text-slate-900">{tech.name}</span>
-                        </div>
-                    ))}
-                    {/* Clones for infinite animation will be appended by GSAP but we can also double map for safety/SSR */}
-                    {techStack.items.map((tech, i) => (
-                        <div key={`clone-${i}`} className="flex items-center gap-4 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default group">
-                            <TechIcon type={tech.icon} className="w-10 h-10 transition-transform duration-500 group-hover:scale-110" />
-                            <span className="text-lg font-bold tracking-tight text-slate-900">{tech.name}</span>
+                    {/* Double the list for seamless loop */}
+                    {[...techStack.items, ...techStack.items].map((tech, i) => (
+                        <div key={i} className="flex items-center gap-3 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 transition-all duration-700 cursor-default group">
+                            <TechIcon type={tech.icon} className="w-6 h-6 md:w-7 md:h-7 transition-transform duration-500 group-hover:scale-110" />
+                            <span className="text-[11px] font-black tracking-tighter text-slate-900 uppercase">{tech.name}</span>
                         </div>
                     ))}
                 </div>

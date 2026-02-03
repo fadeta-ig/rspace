@@ -84,14 +84,6 @@
             {
                 "name": "GSAP",
                 "icon": "gsap"
-            },
-            {
-                "name": "Directus",
-                "icon": "directus"
-            },
-            {
-                "name": "DigitalOcean",
-                "icon": "digitalocean"
             }
         ]
     },

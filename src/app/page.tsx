@@ -44,11 +44,11 @@ export default function Home() {
   return (
     <div ref={containerRef}>
       <Hero />
-      <TechStack />
       <Marquee />
       <Services />
       <Portfolio />
       <StandardFeatures />
+      <TechStack />
       <Pricing />
       <Maintenance />
       <About />
