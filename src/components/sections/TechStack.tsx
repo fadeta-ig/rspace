@@ -45,20 +45,20 @@ export default function TechStack() {
     return (
         <section className="py-12 bg-white overflow-hidden border-y border-gray-50/60">
             <div className="relative">
-                {/* Minimalist Authority Title */}
+                {/* Enhanced Authority Title */}
                 <div className="flex justify-center mb-10">
-                    <span className="text-[9px] font-bold tracking-[0.6em] uppercase text-slate-300 border-b border-slate-100 pb-2">
+                    <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-slate-500 border-b border-slate-200 pb-2">
                         {techStack.title}
                     </span>
                 </div>
 
-                {/* Depth Gradients */}
-                <div className="absolute inset-y-0 left-0 w-32 md:w-64 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
-                <div className="absolute inset-y-0 right-0 w-32 md:w-64 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+                {/* Enhanced Contrast Gradients */}
+                <div className="absolute inset-y-0 left-0 w-40 md:w-80 bg-gradient-to-r from-white via-white/95 to-transparent z-20 pointer-events-none"></div>
+                <div className="absolute inset-y-0 right-0 w-40 md:w-80 bg-gradient-to-l from-white via-white/95 to-transparent z-20 pointer-events-none"></div>
 
                 <div
                     ref={scrollRef}
-                    className="flex items-center gap-6 md:gap-8 whitespace-nowrap"
+                    className="flex items-center gap-6 md:gap-8 whitespace-nowrap pr-6 md:pr-8"
                 >
                     {/* Seamless Loop with Luxury Glass Cards */}
                     {[...techStack.items, ...techStack.items].map((tech, i) => (
