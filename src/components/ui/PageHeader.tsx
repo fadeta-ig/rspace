@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import InteractiveBackground from "@/components/ui/InteractiveBackground";
 
 interface PageHeaderProps {
     title: string;
@@ -22,36 +23,36 @@ export default function PageHeader({ title, subtitle, eyebrow }: PageHeaderProps
     }, []);
 
     return (
-        <div ref={headerRef} className="bg-[#002B7F] text-white py-24 md:py-32 relative overflow-hidden">
-            {/* Background pattern/decor */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
-            </div>
+        <div ref={headerRef} className="relative py-24 md:py-32 overflow-hidden bg-white">
+            <InteractiveBackground />
 
+            {/* Content Container */}
             <div className="container px-4 lg:px-8 relative z-10 text-center">
-                <nav className="flex justify-center items-center gap-2 mb-6 text-sm text-blue-200/80">
-                    <Link href="/" className="hover:text-white transition-colors">Home</Link>
-                    <span>/</span>
-                    <span className="text-white font-medium">{title}</span>
+                <nav className="flex justify-center items-center gap-2 mb-8 text-[13px] font-semibold tracking-wide text-slate-400 uppercase">
+                    <Link href="/" className="hover:text-[#002B7F] transition-colors">Home</Link>
+                    <span className="opacity-30">/</span>
+                    <span className="text-[#002B7F]">{title}</span>
                 </nav>
 
                 {eyebrow && (
-                    <span className="inline-block px-3 py-1 bg-white/10 text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-4 backdrop-blur-sm border border-white/10">
+                    <span className="inline-block px-4 py-1.5 bg-[#002B7F] text-white text-[10px] font-bold rounded-full uppercase tracking-[0.2em] mb-8 shadow-lg shadow-blue-500/10">
                         {eyebrow}
                     </span>
                 )}
 
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                <h1 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter text-[#0f172a] leading-tight">
                     {title}
                 </h1>
 
                 {subtitle && (
-                    <p className="text-lg md:text-xl text-blue-100/80 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-medium">
                         {subtitle}
                     </p>
                 )}
             </div>
+
+            {/* Bottom Border Accent */}
+            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-100 to-transparent"></div>
         </div>
     );
 }
