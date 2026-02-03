@@ -62,28 +62,28 @@
         "title": "Teknologi yang Kami Gunakan",
         "items": [
             {
-                "name": "Next.js",
-                "icon": "nextjs"
-            },
-            {
                 "name": "WordPress",
-                "icon": "wordpress"
+                "src": "/src/assets/wordpress.png"
             },
             {
                 "name": "Laravel",
-                "icon": "laravel"
+                "src": "/src/assets/laravel.png"
+            },
+            {
+                "name": "Next.js",
+                "src": "/src/assets/next-js-seeklogo.png"
             },
             {
                 "name": "Vue.js",
-                "icon": "vuejs"
+                "src": "/src/assets/vue-js-seeklogo.png"
             },
             {
-                "name": "Tailwind",
-                "icon": "tailwind"
+                "name": "Flutter",
+                "src": "/src/assets/flutter.png"
             },
             {
-                "name": "GSAP",
-                "icon": "gsap"
+                "name": "Cloudflare",
+                "src": "/src/assets/cloudflare-color.png"
             }
         ]
     },
