@@ -16,6 +16,7 @@ import {
   CTA,
   Contact,
   FAQ,
+  TechStack,
 } from "@/components/sections";
 import Marquee from "@/components/sections/Marquee";
 
@@ -43,6 +44,7 @@ export default function Home() {
   return (
     <div ref={containerRef}>
       <Hero />
+      <TechStack />
       <Marquee />
       <Services />
       <Portfolio />

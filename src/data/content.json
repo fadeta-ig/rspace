@@ -58,6 +58,43 @@
             "SEO Optimized"
         ]
     },
+    "techStack": {
+        "title": "Teknologi yang Kami Gunakan",
+        "items": [
+            {
+                "name": "Next.js",
+                "icon": "nextjs"
+            },
+            {
+                "name": "WordPress",
+                "icon": "wordpress"
+            },
+            {
+                "name": "Laravel",
+                "icon": "laravel"
+            },
+            {
+                "name": "Vue.js",
+                "icon": "vuejs"
+            },
+            {
+                "name": "Tailwind",
+                "icon": "tailwind"
+            },
+            {
+                "name": "GSAP",
+                "icon": "gsap"
+            },
+            {
+                "name": "Directus",
+                "icon": "directus"
+            },
+            {
+                "name": "DigitalOcean",
+                "icon": "digitalocean"
+            }
+        ]
+    },
     "hero": {
         "tag": "Mitra Transformasi Digital",
         "title": "Ubah Website Menjadi",
@@ -234,12 +271,16 @@
                 "desc": "Keamanan Data"
             },
             {
+                "title": "Client Dashboard",
+                "desc": "Monitoring Real-time"
+            },
+            {
                 "title": "Global CDN",
-                "desc": "Akses Cepat Dimana Saja"
+                "desc": "Akses Cepat"
             },
             {
                 "title": "Akses Penuh",
-                "desc": "Aset Milik Anda 100%"
+                "desc": "Aset Anda 100%"
             }
         ]
     },

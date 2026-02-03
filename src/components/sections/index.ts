@@ -11,3 +11,4 @@ export { default as CTA } from "./CTA";
 export { default as Contact } from "./Contact";
 export { default as FAQ } from "./FAQ";
 export { default as Marquee } from "./Marquee";
+export { default as TechStack } from "./TechStack";
