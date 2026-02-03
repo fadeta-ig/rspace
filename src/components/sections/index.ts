@@ -12,3 +12,4 @@ export { default as Contact } from "./Contact";
 export { default as FAQ } from "./FAQ";
 export { default as Marquee } from "./Marquee";
 export { default as TechStack } from "./TechStack";
+export { default as ClientDashboard } from "./ClientDashboard";

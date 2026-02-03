@@ -17,6 +17,7 @@ import {
   Contact,
   FAQ,
   TechStack,
+  ClientDashboard,
 } from "@/components/sections";
 import Marquee from "@/components/sections/Marquee";
 
@@ -46,6 +47,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <Services />
+      <ClientDashboard />
       <Portfolio />
       <StandardFeatures />
       <TechStack />

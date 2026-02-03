@@ -276,6 +276,30 @@
             }
         ]
     },
+    "clientDashboard": {
+        "tag": "Kendali Penuh",
+        "title": "Monitoring & Kelola Bisnis dalam Satu Genggaman",
+        "description": "Setiap website yang kami bangun dilengkapi dengan Dashboard Client eksklusif untuk memantau performa dan mengelola konten tanpa kendala teknis.",
+        "features": [
+            {
+                "title": "Statistik Real-time",
+                "desc": "Pantau jumlah pengunjung, alur traffic, dan data konversi langsung dari panel Anda."
+            },
+            {
+                "title": "Manajemen Konten",
+                "desc": "Ubah teks, gambar, dan detail produk dengan editor visual yang ramah pengguna."
+            },
+            {
+                "title": "Integrasi WhatsApp",
+                "desc": "Kelola notifikasi dan log pesan masuk dari pengunjung secara terorganisir."
+            },
+            {
+                "title": "Keamanan Data",
+                "desc": "Sistem enkripsi berlapis untuk melindungi data transaksi dan privasi pelanggan Anda."
+            }
+        ],
+        "image": "/images/dashboard-mockup.png"
+    },
     "pricing": {
         "tag": "Investasi",
         "title": "Pilihan Paket Solusi",
