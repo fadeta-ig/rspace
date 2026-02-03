@@ -108,7 +108,7 @@ export default function FAQ() {
 
                             <div className="relative group rounded-[2.5rem] overflow-hidden shadow-2xl shadow-blue-500/10">
                                 <Image
-                                    src="/C:/Users/IT WIG/.gemini/antigravity/brain/dcc9bad9-76d0-4c07-89b0-e18a00342434/faq_modern_visual_1770102012340.png"
+                                    src="/images/faq-visual.png"
                                     alt="Professional Support Illustration"
                                     width={600}
                                     height={600}
