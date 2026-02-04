@@ -3,7 +3,7 @@
 import PageHeader from "@/components/ui/PageHeader";
 import content from "@/data/content.json";
 import { ServiceIcon } from "@/components/ui/Icons";
-import { CTA } from "@/components/sections";
+import { CTA, Process } from "@/components/sections";
 import { useEffect, useRef } from "react";
 
 const { services } = content;
@@ -80,6 +80,7 @@ export default function ServicesPage() {
                 </div>
             </section>
 
+            <Process />
             <CTA />
         </main>
     );
