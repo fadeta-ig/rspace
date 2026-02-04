@@ -84,6 +84,14 @@
             {
                 "name": "Cloudflare",
                 "src": "/src/assets/cloudflare-color.png"
+            },
+            {
+                "name": "cPanel",
+                "src": "/src/assets/cpanel.png"
+            },
+            {
+                "name": "Ubuntu Server",
+                "src": "/src/assets/ubuntu.png"
             }
         ]
     },
