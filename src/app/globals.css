@@ -840,136 +840,115 @@ body {
   color: var(--text-muted);
 }
 
-/* ===== NEW PRICING SECTION - REFINED ===== */
+/* ===== NEW PRICING SECTION - LUXURY SLIDER ===== */
 .pricing-section-new {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background: #f8fafc;
+  position: relative;
 }
 
-.pricing-grid-new {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.25rem;
+.pricing-slider-wrapper {
+  position: relative;
+  margin-top: 2rem;
 }
 
-@media (max-width: 1400px) {
-  .pricing-grid-new {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .pricing-grid-new {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .pricing-grid-new {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
-  }
+.pricing-grid-slider {
+  display: flex;
+  padding: 2rem 0;
+  will-change: transform;
 }
 
 .pricing-card-compact {
   background: white;
   border: 1px solid #e2e8f0;
-  border-radius: 20px;
-  padding: 1.5rem;
+  border-radius: 28px;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
 
 .pricing-card-compact:hover {
   border-color: #002B7F;
-  box-shadow: 0 20px 40px rgba(0, 43, 127, 0.08);
-  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 43, 127, 0.12);
+  transform: translateY(-10px);
 }
 
 .pricing-card-compact.featured {
-  border: 2px solid #002B7F;
-  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%);
+  border: 2.5px solid #002B7F;
+  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
 }
 
 .pricing-card-compact.featured::before {
-  content: 'BEST SELLER';
+  content: 'BEST VALUE';
   position: absolute;
   top: 0;
   right: 0;
   background: #002B7F;
   color: white;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 800;
-  padding: 4px 12px;
-  border-bottom-left-radius: 12px;
+  padding: 6px 16px;
+  border-bottom-left-radius: 16px;
   letter-spacing: 0.05em;
+  z-index: 10;
 }
 
 .tier-badge {
   display: inline-block;
-  padding: 4px 10px;
-  font-size: 0.625rem;
-  font-weight: 700;
+  padding: 5px 12px;
+  font-size: 0.7rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-radius: 6px;
-  width: fit-content;
+  letter-spacing: 0.1em;
+  border-radius: 8px;
 }
 
 .pkg-name {
   color: #0f172a;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .pkg-tagline {
   color: #64748b;
+  font-weight: 500;
 }
 
 .pkg-price-details {
-  transition: transform 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .pricing-card-compact:hover .pkg-price-details {
-  transform: scale(1.02);
-}
-
-.price-main {
-  letter-spacing: -0.02em;
+  background: #ffffff;
+  border-color: #002B7F;
+  box-shadow: 0 4px 12px rgba(0, 43, 127, 0.05);
 }
 
 .pkg-specs {
   border-top: 1px dashed #e2e8f0;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .spec-row-new {
-  transition: background 0.2s ease;
+  transition: background 0.3s ease;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .spec-row-new:hover {
   background: #f8fafc;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .pkg-features li {
-  animation: fadeIn 0.5s ease forwards;
+  transition: transform 0.3s ease;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateX(-5px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-.pkg-btn {
-  cursor: pointer;
-}
-
-.pkg-btn:active {
-  transform: scale(0.98);
+.pkg-features li:hover {
+  transform: translateX(4px);
 }
 
 .premium-lock {
@@ -977,8 +956,26 @@ body {
   align-items: center;
   justify-content: center;
   background: #fffbeb;
-  padding: 4px;
-  border-radius: 6px;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.1);
+}
+
+@media (max-width: 768px) {
+  .pricing-grid-slider {
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .pricing-card-compact {
+    width: 100% !important;
+    padding: 2rem;
+  }
+
+  .pricing-section-new {
+    padding: 4rem 0;
+  }
 }
 
 /* ===== ABOUT SECTION - REFINED LUXURY ===== */

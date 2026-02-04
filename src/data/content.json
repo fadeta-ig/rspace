@@ -379,28 +379,28 @@
                 "buttonStyle": "primary"
             },
             {
-                "id": "bisnis",
-                "tier": "GROWTH ENGINE",
+                "id": "ecommerce",
+                "tier": "E-COMMERCE SOLUTION",
                 "tierClass": "tier-4",
-                "name": "Bisnis Profesional",
-                "tagline": "Aset digital serius untuk perusahaan yang mengejar omzet & reputasi.",
+                "name": "E-Commerce / Online Store",
+                "tagline": "Transformasi bisnis konvensional menjadi toko online otomatis dengan integrasi penuh.",
                 "priceFrom": "Rp 5.000.000",
-                "priceTo": "Rp 7.500.000",
+                "priceTo": "Rp 8.500.000",
                 "featured": false,
                 "premium": false,
                 "specs": {
-                    "teknis": "15-20 Page Custom",
+                    "teknis": "Sistem Toko Online",
                     "server": "Dedicated VPS/Cloud",
                     "waktu": "14-21 Hari Kerja",
                     "revisi": "Unlimited (Fase Desain)"
                 },
                 "features": [
-                    "Audit Kompetitor & SEO",
-                    "Analisis Traffic (Analytics)",
-                    "Multibahasa (Optional)",
-                    "Integrasi Email Marketing"
+                    "Payment Gateway (Midtrans/Xendit)",
+                    "Hitung Ongkir Otomatis (RajaOngkir)",
+                    "Manajemen Stok & Inventori",
+                    "Laporan Penjualan Real-time"
                 ],
-                "buttonText": "Skalakan Bisnis",
+                "buttonText": "Bangun Toko Online",
                 "buttonStyle": "secondary"
             },
             {
@@ -565,8 +565,8 @@
                     "label": "Institusi/Organisasi (Rp 3.000.000 - 5.000.000)"
                 },
                 {
-                    "value": "bisnis",
-                    "label": "Bisnis Profesional (Rp 5.000.000 - 7.500.000)"
+                    "value": "ecommerce",
+                    "label": "E-Commerce Solution (Rp 5.000.000 - 8.500.000)"
                 },
                 {
                     "value": "startup",
