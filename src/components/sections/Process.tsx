@@ -138,25 +138,25 @@ export default function Process() {
     return (
         <section id="process" ref={sectionRef} className="section bg-white overflow-hidden py-0 border-t border-slate-50 min-h-screen">
             <div className="container px-4 lg:px-12 mx-auto py-32">
-                <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
 
                     {/* Left Side: Pinned Headline Container */}
                     <div className="lg:w-1/3 w-full self-start" ref={leftColRef}>
                         <div className="process-sticky-header h-fit lg:pt-8">
-                            <span className="inline-block px-4 py-1.5 bg-[#002B7F] text-white text-[11px] font-bold rounded-full uppercase tracking-[0.2em] mb-6">
+                            <span className="inline-block px-3 py-1 bg-[#002B7F] text-white text-[10px] font-bold rounded-full uppercase tracking-[0.2em] mb-6">
                                 {process.tag}
                             </span>
-                            <h2 className="text-4xl lg:text-6xl font-black text-[#0f172a] mb-8 leading-[1.05] tracking-tight">
+                            <h2 className="text-3xl lg:text-5xl font-black text-[#0f172a] mb-6 leading-[1.1] tracking-tight">
                                 {process.title}
                             </h2>
-                            <div className="w-20 h-1.5 bg-[#002B7F] mb-10 rounded-full" />
-                            <p className="text-xl text-[#64748b] leading-relaxed max-w-sm font-medium">
+                            <div className="w-12 h-1 bg-[#002B7F] mb-8 rounded-full" />
+                            <p className="text-lg text-[#64748b] leading-relaxed max-w-xs font-medium">
                                 {process.description}
                             </p>
 
-                            <div className="mt-16 hidden lg:block">
-                                <div className="flex items-center gap-4 text-xs font-bold text-[#002B7F] uppercase tracking-widest opacity-60">
-                                    <div className="w-10 h-[2px] bg-[#002B7F]"></div>
+                            <div className="mt-12 hidden lg:block">
+                                <div className="flex items-center gap-3 text-[10px] font-bold text-[#002B7F] uppercase tracking-widest opacity-60">
+                                    <div className="w-8 h-[1px] bg-[#002B7F]"></div>
                                     The Roadmap to Success
                                 </div>
                             </div>
@@ -164,7 +164,7 @@ export default function Process() {
                     </div>
 
                     {/* Right Side: Vertical Timeline Items */}
-                    <div className="lg:w-2/3 w-full relative process-items-container pl-4 md:pl-0 flex flex-col gap-16 md:gap-40 lg:pb-[20vh]">
+                    <div className="lg:w-2/3 w-full relative process-items-container pl-4 md:pl-0 flex flex-col gap-12 md:gap-24 lg:pb-[20vh]">
 
                         {/* Connection Line (Static) */}
                         <div className="absolute left-[8px] md:left-[16px] top-10 bottom-10 w-[1px] bg-slate-100 hidden sm:block" />
@@ -176,31 +176,31 @@ export default function Process() {
                         />
 
                         {process.items.map((item, index) => (
-                            <div key={index} className="process-item-trigger relative pl-8 md:pl-28 py-4 group transition-all duration-700">
+                            <div key={index} className="process-item-trigger relative pl-8 md:pl-24 py-2 group transition-all duration-700">
 
                                 {/* Circle Dot Marker */}
-                                <div className="absolute left-[-2px] md:left-[5px] top-12 w-[22px] h-[22px] bg-white z-20 hidden sm:flex items-center justify-center rounded-full border border-slate-100 shadow-sm">
-                                    <div className="process-dot-inner w-2.5 h-2.5 rounded-full bg-slate-200 transition-all duration-500" />
+                                <div className="absolute left-[-2px] md:left-[5px] top-10 w-[22px] h-[22px] bg-white z-20 hidden sm:flex items-center justify-center rounded-full border border-slate-100 shadow-sm">
+                                    <div className="process-dot-inner w-2 h-2 rounded-full bg-slate-200 transition-all duration-500" />
                                 </div>
 
                                 {/* Step Card */}
-                                <div className="process-item-content relative bg-slate-50/50 p-10 md:p-14 rounded-[2.5rem] border border-transparent transition-all duration-700">
-                                    <div className="flex items-center gap-4 mb-8">
-                                        <span className="step-number text-xs font-black tracking-[0.3em] text-[#94a3b8] opacity-50 transition-all duration-500 uppercase">
+                                <div className="process-item-content relative bg-slate-50/50 p-8 md:p-10 rounded-3xl border border-transparent transition-all duration-700">
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <span className="step-number text-[10px] font-black tracking-[0.2em] text-[#94a3b8] opacity-50 transition-all duration-500 uppercase">
                                             PHASE {(index + 1).toString().padStart(2, '0')}
                                         </span>
-                                        <div className="h-[1px] w-12 bg-slate-200" />
+                                        <div className="h-[1px] w-8 bg-slate-200" />
                                     </div>
 
-                                    <h3 className="process-item-title text-3xl md:text-4xl font-black text-[#0f172a] mb-6 transition-all duration-500">
+                                    <h3 className="process-item-title text-2xl md:text-3xl font-black text-[#0f172a] mb-4 transition-all duration-500">
                                         {item.title}
                                     </h3>
 
-                                    <p className="text-[#64748b] leading-relaxed text-lg md:text-xl max-w-2xl font-medium">
+                                    <p className="text-[#64748b] leading-relaxed text-base md:text-lg max-w-2xl font-medium">
                                         {item.desc}
                                     </p>
 
-                                    <div className="absolute right-12 bottom-12 text-[160px] font-black text-slate-200/20 select-none pointer-events-none group-hover:text-[#002B7F]/5 transition-colors duration-1000 leading-none">
+                                    <div className="absolute right-8 bottom-8 text-[100px] font-black text-slate-200/20 select-none pointer-events-none group-hover:text-[#002B7F]/5 transition-colors duration-1000 leading-none">
                                         {index + 1}
                                     </div>
                                 </div>
