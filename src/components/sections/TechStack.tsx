@@ -12,7 +12,7 @@ import vueLogo from "@/assets/vue-js-seeklogo.png";
 import flutterLogo from "@/assets/flutter.png";
 import cfLogo from "@/assets/cloudflare-color.png";
 import cpLogo from "@/assets/cpanel.png";
-import ubuntuLogo from "@/assets/ubuntu-server.png";
+import ubuntuLogo from "@/assets/ubuntu.png";
 const { techStack } = content;
 
 const assetMap: Record<string, any> = {
