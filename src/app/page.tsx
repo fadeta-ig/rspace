@@ -40,17 +40,17 @@ export default function Home() {
   return (
     <div ref={containerRef}>
       <Hero />
+      <About />
       <Marquee />
       <Services />
-      <Process />
       <ClientDashboard />
       <Portfolio />
       <StandardFeatures />
       <TechStack />
       <Pricing />
       <Maintenance />
-      <About />
       <Testimonials />
+      <Process />
       <FAQ />
       <Marquee />
       <CTA />

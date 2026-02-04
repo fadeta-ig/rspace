@@ -17,7 +17,7 @@ export default function Process() {
             import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
                 gsap.registerPlugin(ScrollTrigger);
 
-                // Timeline for the vertical line progress
+                // Progress line animation
                 gsap.fromTo(
                     lineRef.current,
                     { scaleY: 0 },
@@ -26,140 +26,135 @@ export default function Process() {
                         ease: "none",
                         scrollTrigger: {
                             trigger: ".process-items-container",
-                            start: "top center",
-                            end: "bottom center",
-                            scrub: 1,
+                            start: "top 25%",
+                            end: "bottom 75%",
+                            scrub: 0.5,
                         },
                     }
                 );
 
-                // Animate each item
-                const itemTriggers = gsap.utils.toArray(".process-item-trigger");
-                itemTriggers.forEach((item: any) => {
-                    gsap.fromTo(
-                        item,
-                        {
-                            opacity: 0.2,
-                            y: 20,
-                            filter: "blur(4px)"
-                        },
-                        {
-                            opacity: 1,
-                            y: 0,
-                            filter: "blur(0px)",
-                            scrollTrigger: {
-                                trigger: item,
-                                start: "top 80%",
-                                end: "top 40%",
-                                scrub: 1,
-                                toggleActions: "play reverse play reverse",
-                            },
-                        }
-                    );
+                // Individual item animations
+                const items = gsap.utils.toArray(".process-item-trigger");
+                items.forEach((item: any) => {
+                    const dot = item.querySelector(".process-dot-inner");
+                    const stepNum = item.querySelector(".step-number");
+                    const title = item.querySelector(".process-item-title");
 
-                    // Animate the dot inside the item
-                    const dot = item.querySelector(".process-dot");
-                    if (dot) {
-                        gsap.fromTo(
-                            dot,
-                            {
-                                scale: 0.5,
-                                backgroundColor: "var(--border-color, #e2e8f0)"
+                    gsap.timeline({
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 40%",
+                            end: "bottom 40%",
+                            toggleActions: "play reverse play reverse",
+                            onEnter: () => {
+                                gsap.to(dot, { scale: 1.5, backgroundColor: "#002B7F", duration: 0.3 });
+                                gsap.to(stepNum, { color: "#002B7F", opacity: 1, duration: 0.3 });
+                                gsap.to(title, { x: 10, color: "#002B7F", duration: 0.3 });
                             },
-                            {
-                                scale: 1,
-                                backgroundColor: "var(--accent-primary, #002B7F)",
-                                scrollTrigger: {
-                                    trigger: item,
-                                    start: "top center",
-                                    end: "bottom center",
-                                    scrub: 1,
-                                },
+                            onLeave: () => {
+                                gsap.to(dot, { scale: 1, backgroundColor: "#e2e8f0", duration: 0.3 });
+                                gsap.to(stepNum, { color: "#94a3b8", opacity: 0.5, duration: 0.3 });
+                                gsap.to(title, { x: 0, color: "#002B7F", duration: 0.3 });
+                            },
+                            onEnterBack: () => {
+                                gsap.to(dot, { scale: 1.5, backgroundColor: "#002B7F", duration: 0.3 });
+                                gsap.to(stepNum, { color: "#002B7F", opacity: 1, duration: 0.3 });
+                                gsap.to(title, { x: 10, color: "#002B7F", duration: 0.3 });
+                            },
+                            onLeaveBack: () => {
+                                gsap.to(dot, { scale: 1, backgroundColor: "#e2e8f0", duration: 0.3 });
+                                gsap.to(stepNum, { color: "#94a3b8", opacity: 0.5, duration: 0.3 });
+                                gsap.to(title, { x: 0, color: "#002B7F", duration: 0.3 });
                             }
-                        );
-                    }
+                        }
+                    });
                 });
+
+                // Sticky left column fade in
+                gsap.fromTo(".process-sticky-header",
+                    { opacity: 0, x: -30 },
+                    {
+                        opacity: 1, x: 0,
+                        duration: 1,
+                        scrollTrigger: {
+                            trigger: section,
+                            start: "top 60%",
+                            toggleActions: "play none none none"
+                        }
+                    }
+                );
             });
         });
     }, []);
 
     return (
-        <section id="process" ref={sectionRef} className="section bg-white overflow-hidden py-24 md:py-32">
+        <section id="process" ref={sectionRef} className="section bg-white overflow-hidden py-32 border-t border-slate-50">
             <div className="container px-4 lg:px-8">
-                <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                    {/* Left Side: Sticky Info */}
-                    <div className="lg:w-2/5">
-                        <div className="lg:sticky lg:top-32">
-                            <div className="reveal">
-                                <span className="inline-block px-3 py-1 bg-accent-primary text-white text-[10px] font-semibold rounded-full uppercase tracking-widest mb-6">
-                                    {process.tag}
-                                </span>
-                                <h2 className="text-4xl lg:text-6xl font-bold text-accent-primary mb-8 leading-tight tracking-tight">
-                                    {process.title}
-                                </h2>
-                                <p className="text-slate-500 text-lg leading-relaxed max-w-md mb-10">
-                                    {process.description}
-                                </p>
+                <div className="flex flex-col lg:flex-row gap-20">
 
-                                <div className="flex items-center gap-6 group cursor-default">
-                                    <div className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-accent-primary transition-all duration-500 group-hover:bg-accent-primary group-hover:text-white group-hover:scale-110">
-                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-accent-primary font-bold text-sm">High Standard QC</h4>
-                                        <p className="text-slate-400 text-xs">Pengecekan kualitas di setiap fase</p>
-                                    </div>
-                                </div>
-                            </div>
+                    {/* Left Side: Sticky Headline */}
+                    <div className="lg:w-1/3">
+                        <div className="lg:sticky lg:top-40 process-sticky-header">
+                            <span className="inline-block px-3 py-1 bg-accent-primary/10 text-accent-primary text-[10px] font-bold rounded-full uppercase tracking-[0.2em] mb-6">
+                                {process.tag}
+                            </span>
+                            <h2 className="text-4xl lg:text-5xl font-extrabold text-[#002B7F] mb-8 leading-[1.1] tracking-tight">
+                                {process.title}
+                            </h2>
+                            <div className="w-16 h-1 bg-accent-primary mb-8 rounded-full" />
+                            <p className="text-slate-500 text-lg leading-relaxed max-w-sm">
+                                {process.description}
+                            </p>
                         </div>
                     </div>
 
-                    {/* Right Side: Timeline Process */}
-                    <div className="lg:w-3/5 relative process-items-container pb-12">
-                        {/* Vertical Line Background */}
-                        <div className="absolute left-[15px] top-6 bottom-0 w-[1px] bg-slate-100 hidden md:block" />
+                    {/* Right Side: Vertical Timeline */}
+                    <div className="lg:w-2/3 relative process-items-container pl-4 md:pl-0">
 
-                        {/* Vertical Progress Line (Animated) */}
+                        {/* Background Line (Static) */}
+                        <div className="absolute left-[8px] md:left-[16px] top-4 bottom-4 w-[2px] bg-slate-100 hidden sm:block" />
+
+                        {/* Animated Progress Line */}
                         <div
                             ref={lineRef}
-                            className="absolute left-[15px] top-6 bottom-0 w-[1px] bg-accent-primary origin-top hidden md:block"
+                            className="absolute left-[8px] md:left-[16px] top-4 bottom-4 w-[2px] bg-accent-primary origin-top hidden sm:block z-10"
                         />
 
-                        <div className="space-y-16 md:space-y-32">
+                        <div className="space-y-24 md:space-y-32">
                             {process.items.map((item, index) => (
-                                <div key={index} className="process-item-trigger relative pl-0 md:pl-20 group">
-                                    {/* Point Indicator */}
-                                    <div className="process-dot absolute left-[7px] top-1.5 w-[17px] h-[17px] rounded-full bg-white border border-slate-200 z-10 hidden md:flex items-center justify-center transition-all duration-500">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-slate-200" />
+                                <div key={index} className="process-item-trigger relative pl-10 md:pl-24 group">
+
+                                    {/* Dot Marker */}
+                                    <div className="absolute left-[-1px] md:left-[7px] top-1.5 w-[20px] h-[20px] bg-white z-20 hidden sm:flex items-center justify-center">
+                                        <div className="process-dot-inner w-2 h-2 rounded-full bg-slate-200 transition-all duration-500" />
                                     </div>
 
-                                    {/* Step Number Badge */}
-                                    <div className="flex items-center gap-4 mb-4">
-                                        <span className="text-sm font-black text-accent-primary/20 tracking-tighter">
-                                            STEP {(index + 1).toString().padStart(2, '0')}
-                                        </span>
-                                        <div className="h-[1px] w-8 bg-slate-100" />
-                                    </div>
-
+                                    {/* Content Box */}
                                     <div className="relative">
-                                        <h3 className="text-2xl md:text-3xl font-bold text-accent-primary mb-4 transition-all duration-500 group-hover:translate-x-2">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <span className="step-number text-xs font-black tracking-widest text-slate-400 opacity-50 transition-all duration-500">
+                                                STEP {(index + 1).toString().padStart(2, '0')}
+                                            </span>
+                                        </div>
+
+                                        <h3 className="process-item-title text-2xl md:text-3xl font-bold text-slate-800 mb-5 transition-all duration-500">
                                             {item.title}
                                         </h3>
-                                        <p className="text-slate-500 leading-relaxed max-w-xl text-base md:text-lg">
+
+                                        <p className="text-slate-500 leading-relaxed text-base md:text-lg max-w-2xl bg-white/50 backdrop-blur-sm">
                                             {item.desc}
                                         </p>
                                     </div>
 
-                                    {/* Visual Accent */}
-                                    <div className="absolute -right-4 -bottom-8 text-8xl font-black text-slate-50/50 select-none -z-10 group-hover:text-accent-primary/5 transition-colors duration-700">
+                                    {/* Aesthetic Number Background */}
+                                    <div className="absolute -right-4 top-0 text-[120px] font-black text-slate-50/70 select-none -z-10 transition-colors duration-700 pointer-events-none">
                                         {index + 1}
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
