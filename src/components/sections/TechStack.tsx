@@ -11,7 +11,8 @@ import laravelLogo from "@/assets/laravel.png";
 import vueLogo from "@/assets/vue-js-seeklogo.png";
 import flutterLogo from "@/assets/flutter.png";
 import cfLogo from "@/assets/cloudflare-color.png";
-
+import cpLogo from "@/assets/cpanel.png";
+import ubuntuLogo from "@/assets/ubuntu-server.png";
 const { techStack } = content;
 
 const assetMap: Record<string, any> = {
@@ -20,7 +21,9 @@ const assetMap: Record<string, any> = {
     "Next.js": nextLogo,
     "Vue.js": vueLogo,
     "Flutter": flutterLogo,
-    "Cloudflare": cfLogo
+    "Cloudflare": cfLogo,
+    "cPanel": cpLogo,
+    "Ubuntu Server": ubuntuLogo,
 };
 
 export default function TechStack() {
