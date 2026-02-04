@@ -18,6 +18,7 @@ import {
   FAQ,
   TechStack,
   ClientDashboard,
+  Process,
 } from "@/components/sections";
 import Marquee from "@/components/sections/Marquee";
 
@@ -30,13 +31,7 @@ export default function Home() {
     hasAnimated.current = true;
 
     const ctx = gsap.context(() => {
-      // Animate all reveal elements
-      const revealElements = document.querySelectorAll(".reveal, .animate-section, .heading-animate");
-      gsap.set(revealElements, { opacity: 1, y: 0 });
-
-      // Animate cards with stagger
-      const cards = document.querySelectorAll(".card, .pricing-card, .portfolio-card, .testimonial-card, .maintenance-card, .faq-item");
-      gsap.set(cards, { opacity: 1, y: 0, scale: 1 });
+      // Components handle their own entry animations
     }, containerRef);
 
     return () => ctx.revert();
@@ -47,6 +42,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <Services />
+      <Process />
       <ClientDashboard />
       <Portfolio />
       <StandardFeatures />

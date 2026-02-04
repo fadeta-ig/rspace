@@ -620,5 +620,36 @@
                 "answer": "Klik tombol konsultasi, isi form singkat tentang bisnis Anda. Tim kami akan menghubungi Anda (via WA/Email) untuk bedah kebutuhan dan memberikan proposal solusi yang paling efisien secara budget dan teknis."
             }
         ]
+    },
+    "process": {
+        "tag": "Transparansi Proses",
+        "title": "Proses Kerja Kami",
+        "description": "Alur kerja profesional yang terukur untuk memastikan setiap proyek selesai tepat waktu dengan kualitas terbaik.",
+        "items": [
+            {
+                "title": "Konsultasi",
+                "desc": "Bedah kebutuhan bisnis, target audience, dan penentuan solusi digital yang paling efisien."
+            },
+            {
+                "title": "Strategy & Design",
+                "desc": "Penyusunan alur funnel, copywriting, dan desain visual premium yang fokus pada konversi."
+            },
+            {
+                "title": "Development",
+                "desc": "Proses coding menggunakan stack modern dengan standar performa tinggi dan SEO-ready."
+            },
+            {
+                "title": "Uji Testing",
+                "desc": "Quality control menyeluruh, mulai dari responsivitas perangkat hingga integrasi keamanan."
+            },
+            {
+                "title": "Launch & Publish",
+                "desc": "Deployment ke server VPS, konfigurasi domain, dan website resmi online untuk publik."
+            },
+            {
+                "title": "Maintenance & Monitoring",
+                "desc": "Pemantauan berkala, backup rutin, dan bantuan teknis untuk menjaga performa tetap stabil."
+            }
+        ]
     }
 }
