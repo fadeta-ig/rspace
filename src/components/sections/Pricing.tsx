@@ -114,7 +114,7 @@ export default function Pricing() {
                         {(pricing.packages as Package[]).map((pkg) => (
                             <div
                                 key={pkg.id}
-                                className={`pricing-card-vertical pricing-card-compact w-full ${pkg.featured ? "featured" : ""}`}
+                                className={`pricing-card-vertical w-full ${pkg.featured ? "featured" : ""}`}
                             >
                                 {/* Top Decoration for Featured */}
                                 {pkg.featured && <div className="featured-top-glow"></div>}
@@ -195,8 +195,8 @@ export default function Pricing() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className={`pkg-btn-new w-full block py-4 lg:py-5 rounded-2xl text-center text-[13px] font-bold tracking-wider transition-luxury ${pkg.featured
-                                                    ? "bg-[#002B7F] text-white shadow-2xl shadow-blue-500/20 hover:bg-[#001D56] hover:-translate-y-1"
-                                                    : "bg-[#0f172a] text-white hover:bg-[#1e293b] hover:-translate-y-1"
+                                                ? "bg-[#002B7F] text-white shadow-2xl shadow-blue-500/20 hover:bg-[#001D56] hover:-translate-y-1"
+                                                : "bg-[#0f172a] text-white hover:bg-[#1e293b] hover:-translate-y-1"
                                                 }`}
                                         >
                                             {pkg.buttonText.toUpperCase()}
