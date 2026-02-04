@@ -311,8 +311,8 @@
                 "tierClass": "tier-1",
                 "name": "Personal / Portfolio",
                 "tagline": "Untuk profesional yang ingin membangun otoritas dan CV digital.",
-                "priceFrom": "Rp 300rb",
-                "priceTo": "1jt",
+                "priceFrom": "Rp 300.000",
+                "priceTo": "Rp 1.000.000",
                 "featured": false,
                 "premium": false,
                 "specs": {
@@ -335,8 +335,8 @@
                 "tierClass": "tier-2",
                 "name": "UMKM Go Digital",
                 "tagline": "Solusi praktis agar bisnis lokal mudah ditemukan di Google.",
-                "priceFrom": "Rp 1jt",
-                "priceTo": "3,5jt",
+                "priceFrom": "Rp 1.000.000",
+                "priceTo": "Rp 3.500.000",
                 "featured": false,
                 "premium": false,
                 "specs": {
@@ -359,8 +359,8 @@
                 "tierClass": "tier-3",
                 "name": "Institusi / Organisasi",
                 "tagline": "Pusat informasi terpercaya untuk yayasan, sekolah, atau komunitas.",
-                "priceFrom": "Rp 3jt",
-                "priceTo": "5jt",
+                "priceFrom": "Rp 3.000.000",
+                "priceTo": "Rp 5.000.000",
                 "featured": true,
                 "premium": false,
                 "specs": {
@@ -384,8 +384,8 @@
                 "tierClass": "tier-4",
                 "name": "Bisnis Profesional",
                 "tagline": "Aset digital serius untuk perusahaan yang mengejar omzet & reputasi.",
-                "priceFrom": "Rp 5jt",
-                "priceTo": "7,5jt",
+                "priceFrom": "Rp 5.000.000",
+                "priceTo": "Rp 7.500.000",
                 "featured": false,
                 "premium": false,
                 "specs": {
@@ -409,8 +409,8 @@
                 "tierClass": "tier-5",
                 "name": "SaaS / High-Traffic",
                 "tagline": "Pengembangan aplikasi web kompleks dengan infrastruktur server sendiri.",
-                "priceFrom": "Rp 7,5jt",
-                "priceTo": "15jt++",
+                "priceFrom": "Rp 7.500.000",
+                "priceTo": "Rp 15.000.000+",
                 "featured": false,
                 "premium": true,
                 "specs": {
@@ -440,7 +440,7 @@
                 "id": "ondemand",
                 "badge": "OPSI A",
                 "name": "Support by Ticket",
-                "price": "Rp 150rb",
+                "price": "Rp 150.000",
                 "priceSuffix": " / tiket",
                 "description": "Solusi hemat. Hubungi kami hanya jika ada masalah atau butuh update konten.",
                 "featured": false,
@@ -454,7 +454,7 @@
                 "id": "monthly",
                 "badge": "OPSI B",
                 "name": "Managed Service",
-                "price": "Rp 500rb",
+                "price": "Rp 500.000",
                 "priceSuffix": " / bulan",
                 "description": "Seperti punya staff IT sendiri. Kami pantau kesehatan website & server setiap hari.",
                 "featured": true,
@@ -554,23 +554,23 @@
             "packageOptions": [
                 {
                     "value": "freelancer",
-                    "label": "Personal Branding (Rp 300rb - 1jt)"
+                    "label": "Personal Branding (Rp 300.000 - 1.000.000)"
                 },
                 {
                     "value": "umkm",
-                    "label": "UMKM Go Digital (Rp 500rb - 1,5jt)"
+                    "label": "UMKM Go Digital (Rp 1.000.000 - 3.500.000)"
                 },
                 {
                     "value": "organisasi",
-                    "label": "Institusi/Organisasi (Rp 1jt - 3jt)"
+                    "label": "Institusi/Organisasi (Rp 3.000.000 - 5.000.000)"
                 },
                 {
                     "value": "bisnis",
-                    "label": "Bisnis Profesional (Rp 2jt - 5jt)"
+                    "label": "Bisnis Profesional (Rp 5.000.000 - 7.500.000)"
                 },
                 {
                     "value": "startup",
-                    "label": "Custom/SaaS (Rp 5jt++)"
+                    "label": "Custom/SaaS (Rp 7.500.000++)"
                 },
                 {
                     "value": "vps",
