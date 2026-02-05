@@ -20,6 +20,7 @@ interface Package {
         server: string;
         waktu: string;
         revisi: string;
+        garansi: string;
     };
     features: string[];
     buttonText: string;
@@ -167,6 +168,18 @@ export default function Pricing() {
                                                 <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
                                                     <span className="text-xs text-[#64748b] font-medium">Infrastruktur</span>
                                                     <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.server}</span>
+                                                </div>
+                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
+                                                    <span className="text-xs text-[#64748b] font-medium">SLA Pengerjaan</span>
+                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.waktu}</span>
+                                                </div>
+                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
+                                                    <span className="text-xs text-[#64748b] font-medium">Batasan Revisi</span>
+                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.revisi}</span>
+                                                </div>
+                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
+                                                    <span className="text-xs text-[#64748b] font-medium">Garansi</span>
+                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.garansi}</span>
                                                 </div>
                                             </div>
                                         </div>

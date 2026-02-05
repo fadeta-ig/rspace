@@ -327,7 +327,8 @@
                     "teknis": "Single Page App",
                     "server": "Dedicated VPS/Cloud",
                     "waktu": "3-5 Hari Kerja",
-                    "revisi": "1x Revisi Mayor"
+                    "revisi": "1x Revisi Mayor",
+                    "garansi": "30 Hari Maintenance"
                 },
                 "features": [
                     "Showcase Portfolio",
@@ -351,7 +352,8 @@
                     "teknis": "Max 5 Halaman",
                     "server": "Dedicated VPS/Cloud",
                     "waktu": "5-7 Hari Kerja",
-                    "revisi": "2x Revisi Mayor"
+                    "revisi": "2x Revisi Mayor",
+                    "garansi": "3 Bulan Maintenance"
                 },
                 "features": [
                     "Integrasi Google Maps",
@@ -375,7 +377,8 @@
                     "teknis": "10 Halaman + Blog",
                     "server": "Dedicated VPS/Cloud",
                     "waktu": "7-14 Hari Kerja",
-                    "revisi": "3x Revisi Mayor"
+                    "revisi": "3x Revisi Mayor",
+                    "garansi": "6 Bulan Maintenance"
                 },
                 "features": [
                     "Sistem Berita/Artikel",
@@ -400,7 +403,8 @@
                     "teknis": "Sistem Toko Online",
                     "server": "Dedicated VPS/Cloud",
                     "waktu": "14-21 Hari Kerja",
-                    "revisi": "Unlimited (Fase Desain)"
+                    "revisi": "Unlimited (Fase Desain)",
+                    "garansi": "1 Tahun Maintenance"
                 },
                 "features": [
                     "Payment Gateway (Midtrans/Xendit)",
@@ -425,7 +429,8 @@
                     "teknis": "Full Custom Code",
                     "server": "Dedicated VPS/Cloud",
                     "waktu": "By Timeline",
-                    "revisi": "Agile Method"
+                    "revisi": "Agile Method",
+                    "garansi": "Lifetime Support (SLA)"
                 },
                 "features": [
                     "Database Architecture",
