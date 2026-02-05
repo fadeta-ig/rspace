@@ -97,10 +97,10 @@
     },
     "hero": {
         "tag": "Mitra Transformasi Digital",
-        "title": "Ubah Website Menjadi",
-        "titleHighlight": "Mesin Profit",
-        "titleEnd": "Bisnis Anda",
-        "description": "Berhenti membuang uang untuk website yang sekadar 'ada'. Kami membangun ekosistem digital (Web, Sistem, & Server) yang dirancang untuk meningkatkan penjualan dan efisiensi operasional.",
+        "title": "Upgrade Bisnis Anda Lewat",
+        "titleHighlight": "Tampilan Website",
+        "titleEnd": "yang Lebih Bonafide.",
+        "description": "Buat calon customer makin yakin belanja di tempat Anda. Kami sediakan paket lengkap (Web, Sistem & Server) yang anti-ribet dan siap pakai. Hasilnya? Brand Anda jadi lebih naik kelas, trafik pengunjung naik, dan peluang closing jadi jauh lebih besar.",
         "ctaPrimary": "Konsultasi Strategi Gratis",
         "ctaSecondary": "Lihat Studi Kasus",
         "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
@@ -126,7 +126,7 @@
     "services": {
         "tag": "Ekosistem Digital",
         "title": "Infrastruktur & Solusi Bisnis Terintegrasi",
-        "description": "Kami tidak hanya coding, kami memberikan solusi teknis untuk masalah bisnis.",
+        "description": "Kami tidak hanya build code, kami memberikan solusi teknis untuk masalah bisnis.",
         "items": [
             {
                 "icon": "code",
