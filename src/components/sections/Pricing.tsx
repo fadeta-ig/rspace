@@ -137,19 +137,19 @@ export default function Pricing() {
                                             )}
                                         </div>
 
-                                        <h3 className="pkg-name text-3xl font-black mb-3 text-[#0f172a]">{pkg.name}</h3>
-                                        <p className="pkg-tagline text-sm text-[#64748b] leading-relaxed mb-8 flex-grow">
+                                        <h3 className="pkg-name text-2xl font-bold mb-2 tracking-tight text-[#0f172a]">{pkg.name}</h3>
+                                        <p className="pkg-tagline text-[13px] text-[#64748b] leading-relaxed mb-6 flex-grow">
                                             {pkg.tagline}
                                         </p>
 
-                                        <div className="pkg-price-details bg-[#f8fafc] p-6 rounded-3xl border border-[#e2e8f0] transition-luxury hover:border-[#002B7F]/30">
-                                            <div className="text-[10px] text-[#94a3b8] font-black uppercase tracking-[0.1em] mb-2">Mulai Dari</div>
-                                            <div className="flex items-baseline gap-2">
-                                                <span className="price-main text-3xl font-black text-[#002B7F]">{pkg.priceFrom}</span>
+                                        <div className="pkg-price-details bg-white/50 backdrop-blur-md p-5 rounded-2xl border border-slate-200/60 shadow-sm transition-luxury hover:border-[#002B7F]/20 hover:shadow-md">
+                                            <div className="text-[9px] text-[#94a3b8] font-bold uppercase tracking-[0.2em] mb-1">Mulai Dari</div>
+                                            <div className="flex items-baseline gap-1.5">
+                                                <span className="price-main text-2xl font-bold text-[#0f172a]">{pkg.priceFrom}</span>
                                             </div>
-                                            <div className="price-range text-xs text-[#64748b] mt-4 pt-4 border-t border-[#e2e8f0]/60 flex justify-between items-center">
+                                            <div className="price-range text-[11px] text-[#64748b] mt-3 pt-3 border-t border-slate-100 flex justify-between items-center">
                                                 <span>Hingga:</span>
-                                                <span className="font-bold text-[#1e293b]">{pkg.priceTo}</span>
+                                                <span className="font-semibold text-[#0f172a]">{pkg.priceTo}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -161,30 +161,30 @@ export default function Pricing() {
                                                 <div className="w-1.5 h-1.5 bg-[#002B7F] rounded-full"></div>
                                                 Spesifikasi Utama
                                             </div>
-                                            <div className="pkg-specs space-y-4">
-                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
-                                                    <span className="text-xs text-[#64748b] font-medium">Model Teknis</span>
-                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.teknis}</span>
+                                            <div className="pkg-specs space-y-2">
+                                                <div className="spec-row-new flex justify-between items-center py-1.5 border-b border-[#f1f5f9]">
+                                                    <span className="text-[11px] text-[#64748b] font-medium">Model Teknis</span>
+                                                    <span className="text-[11px] font-semibold text-[#0f172a]">{pkg.specs.teknis}</span>
                                                 </div>
-                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
-                                                    <span className="text-xs text-[#64748b] font-medium">Infrastruktur</span>
-                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.server}</span>
+                                                <div className="spec-row-new flex justify-between items-center py-1.5 border-b border-[#f1f5f9]">
+                                                    <span className="text-[11px] text-[#64748b] font-medium">Infrastruktur</span>
+                                                    <span className="text-[11px] font-semibold text-[#0f172a]">{pkg.specs.server}</span>
                                                 </div>
-                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
-                                                    <span className="text-xs text-[#64748b] font-medium">SLA Pengerjaan</span>
-                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.waktu}</span>
+                                                <div className="spec-row-new flex justify-between items-center py-1.5 border-b border-[#f1f5f9]">
+                                                    <span className="text-[11px] text-[#64748b] font-medium">SLA Pengerjaan</span>
+                                                    <span className="text-[11px] font-semibold text-[#0f172a]">{pkg.specs.waktu}</span>
                                                 </div>
-                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
-                                                    <span className="text-xs text-[#64748b] font-medium">Batasan Revisi</span>
-                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.revisi}</span>
+                                                <div className="spec-row-new flex justify-between items-center py-1.5 border-b border-[#f1f5f9]">
+                                                    <span className="text-[11px] text-[#64748b] font-medium">Batasan Revisi</span>
+                                                    <span className="text-[11px] font-semibold text-[#0f172a]">{pkg.specs.revisi}</span>
                                                 </div>
-                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
-                                                    <span className="text-xs text-[#64748b] font-medium">Garansi</span>
-                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.garansi}</span>
+                                                <div className="spec-row-new flex justify-between items-center py-1.5 border-b border-[#f1f5f9]">
+                                                    <span className="text-[11px] text-[#64748b] font-medium">Garansi</span>
+                                                    <span className="text-[11px] font-semibold text-[#0f172a]">{pkg.specs.garansi}</span>
                                                 </div>
-                                                <div className="spec-row-new flex justify-between items-center py-2 border-b border-[#f1f5f9]">
-                                                    <span className="text-xs text-[#64748b] font-medium">Online / Deploy</span>
-                                                    <span className="text-xs font-bold text-[#0f172a]">{pkg.specs.online}</span>
+                                                <div className="spec-row-new flex justify-between items-center py-1.5 border-b border-[#f1f5f9]">
+                                                    <span className="text-[11px] text-[#64748b] font-medium">Online / Deploy</span>
+                                                    <span className="text-[11px] font-semibold text-[#0f172a]">{pkg.specs.online}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,15 +194,15 @@ export default function Pricing() {
                                                 <div className="w-1.5 h-1.5 bg-[#002B7F] rounded-full"></div>
                                                 Fitur Unggulan
                                             </div>
-                                            <ul className="pkg-features space-y-4">
+                                            <ul className="pkg-features space-y-2.5">
                                                 {pkg.features.slice(0, 4).map((feature, i) => (
-                                                    <li key={i} className="flex items-start gap-3 group">
-                                                        <div className="mt-0.5 bg-blue-50 text-[#002B7F] rounded-full p-1.5 transition-luxury group-hover:bg-[#002B7F] group-hover:text-white">
-                                                            <svg className="w-2.5 h-2.5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <li key={i} className="flex items-start gap-2.5 group">
+                                                        <div className="mt-0.5 bg-slate-50 text-[#002B7F] rounded-full p-1 transition-luxury group-hover:bg-[#0f172a] group-hover:text-white">
+                                                            <svg className="w-2 h-2" viewBox="0 0 20 20" fill="currentColor">
                                                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                                             </svg>
                                                         </div>
-                                                        <span className="text-[13px] text-[#475569] font-medium leading-[1.4] transition-luxury group-hover:text-[#0f172a]">{feature}</span>
+                                                        <span className="text-[12px] text-[#475569] font-medium leading-relaxed transition-luxury group-hover:text-[#0f172a]">{feature}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -212,9 +212,9 @@ export default function Pricing() {
                                             href={site.whatsappUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className={`pkg-btn-new w-full block py-4 lg:py-5 rounded-2xl text-center text-[13px] font-bold tracking-wider transition-luxury ${pkg.featured
-                                                ? "bg-[#002B7F] text-white shadow-2xl shadow-blue-500/20 hover:bg-[#001D56] hover:-translate-y-1"
-                                                : "bg-[#0f172a] text-white hover:bg-[#1e293b] hover:-translate-y-1"
+                                            className={`pkg-btn-new w-full block py-3.5 lg:py-4 rounded-xl text-center text-[12px] font-bold tracking-[0.1em] transition-luxury ${pkg.featured
+                                                ? "bg-gradient-to-r from-[#002B7F] to-[#001D56] text-white shadow-lg shadow-blue-500/20 hover:shadow-xl hover:-translate-y-0.5"
+                                                : "bg-[#0f172a] text-white hover:bg-black hover:-translate-y-0.5"
                                                 }`}
                                         >
                                             {pkg.buttonText.toUpperCase()}
