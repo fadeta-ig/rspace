@@ -11,7 +11,7 @@ export default function AboutPage() {
     return (
         <main className="bg-white">
             <PageHeader
-                title="Tentang RSPACE Studio"
+                title="Tentang RSOLV Digital"
                 subtitle="Kami membantu pebisnis membangun aset digital yang bukan sekadar ada, tapi menghasilkan profit."
                 eyebrow={about.tag}
             />
@@ -23,7 +23,7 @@ export default function AboutPage() {
                             <div className="aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10">
                                 <Image
                                     src={about.image}
-                                    alt="RSPACE Studio Team"
+                                    alt="RSOLV Digital Team"
                                     fill
                                     className="object-cover"
                                 />
@@ -38,7 +38,7 @@ export default function AboutPage() {
                             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
                                 <p>{about.description}</p>
                                 <p>
-                                    Di RSPACE,  kami percaya bahwa kegagalan banyak aset digital bukan karena kurangnya fitur, tapi karena kurangnya keselarasan dengan strategi bisnis. Itulah sebabnya setiap baris kode yang kami tulis dimulai dengan pemahaman mendalam tentang siapa pelanggan Anda dan bagaimana mereka berinteraksi dengan produk Anda.
+                                    Di RSOLV,  kami percaya bahwa kegagalan banyak aset digital bukan karena kurangnya fitur, tapi karena kurangnya keselarasan dengan strategi bisnis. Itulah sebabnya setiap baris kode yang kami tulis dimulai dengan pemahaman mendalam tentang siapa pelanggan Anda dan bagaimana mereka berinteraksi dengan produk Anda.
                                 </p>
                             </div>
                         </div>

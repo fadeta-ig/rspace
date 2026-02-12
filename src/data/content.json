@@ -1,12 +1,12 @@
 {
     "site": {
-        "name": "RSPACE STUDIO.",
-        "shortName": "RSPACE",
+        "name": "RSOLV DIGITAL.",
+        "shortName": "RSOLV",
         "logoLetter": "R",
         "tagline": "Jasa Pembuatan Website Profesional End-to-End",
-        "description": "RSPACE Studio menyediakan layanan pembuatan website profesional dari desain hingga hosting. Solusi digital lengkap, modern, dan SEO optimal untuk bisnis Anda.",
+        "description": "RSOLV Digital menyediakan layanan pembuatan website profesional dari desain hingga hosting. Solusi digital lengkap, modern, dan SEO optimal untuk bisnis Anda.",
         "keywords": [
-            "RSPACE Studio",
+            "RSOLV Digital",
             "jasa pembuatan website",
             "web developer Indonesia",
             "jasa hosting website",
@@ -15,8 +15,8 @@
             "web design modern",
             "jasa SEO website"
         ],
-        "author": "RSPACE Studio",
-        "url": "https://rspace.studio/",
+        "author": "RSOLV Digital",
+        "url": "https://rsolv.digital/",
         "whatsapp": "6285111238009",
         "whatsappUrl": "https://wa.me/6285111238009"
     },
@@ -489,7 +489,7 @@
     "about": {
         "tag": "Tentang Kami",
         "title": "Bukan Sekadar Vendor, Tapi Partner Growth",
-        "description": "RSPACE Studio lahir dari keresahan banyak pebisnis yang punya website tapi tidak menghasilkan apa-apa. Kami menggabungkan keahlian Teknis (Code/Server) dengan mindset Bisnis (Sales/Marketing) untuk menciptakan solusi digital yang berdampak.",
+        "description": "RSOLV Digital lahir dari keresahan banyak pebisnis yang punya website tapi tidak menghasilkan apa-apa. Kami menggabungkan keahlian Teknis (Code/Server) dengan mindset Bisnis (Sales/Marketing) untuk menciptakan solusi digital yang berdampak.",
         "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80",
         "highlights": [
             {
@@ -511,7 +511,7 @@
         "title": "Dampak pada Bisnis Klien",
         "items": [
             {
-                "quote": "Dulu web kami sering down pas ada promo. Setelah pindah ke VPS yang dikelola RSPACE, traffic naik 3x lipat tetap lancar jaya!",
+                "quote": "Dulu web kami sering down pas ada promo. Setelah pindah ke VPS yang dikelola RSOLV, traffic naik 3x lipat tetap lancar jaya!",
                 "name": "Budi Santoso",
                 "role": "CEO, PT Maju Bersama",
                 "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
@@ -541,7 +541,7 @@
         "title": "Diskusi Tanpa Resiko",
         "description": "Ceritakan target bisnis Anda, kami akan berikan rekomendasi teknis yang paling efisien. Tidak beli tidak masalah.",
         "info": {
-            "email": "business@rspace.studio",
+            "email": "business@rsolv.digital",
             "phone": "+62 851 1123 8009",
             "location": "Jakarta, Indonesia"
         },
@@ -604,7 +604,7 @@
     },
     "footer": {
         "description": "Solusi digital end-to-end untuk bisnis Anda. Dari desain hingga hosting, kami adalah partner terpercaya Anda.",
-        "copyright": "© {year} RSPACE Studio. All rights reserved.",
+        "copyright": "© {year} RSOLV Digital. All rights reserved.",
         "navTitle": "Navigasi",
         "contactTitle": "Kontak"
     },
@@ -618,11 +618,11 @@
                 "answer": "Hosting biasa ibarat naik 'Angkot', murah tapi berdesakan. Jika satu penumpang bermasalah, Anda kena imbasnya (lambat/down). VPS ibarat 'Mobil Pribadi' atau 'Sewa Gedung Sendiri'. Performa bisnis Anda terjamin stabil, aman, dan siap menampung lonjakan pengunjung tanpa gangguan."
             },
             {
-                "question": "Apakah website buatan RSPACE bisa menghasilkan penjualan?",
+                "question": "Apakah website buatan RSOLV bisa menghasilkan penjualan?",
                 "answer": "Website adalah alat (tools). Kami merancang alat tersebut dengan struktur 'Sales Funnel' yang benar—loading cepat, tombol CTA jelas, dan copywriting persuasif. Jika dikombinasikan dengan produk yang bagus dan traffic (iklan/sosmed) yang tepat, website kami adalah mesin konversi yang powerful."
             },
             {
-                "question": "Apa itu layanan 'Terima Beres' di RSPACE?",
+                "question": "Apa itu layanan 'Terima Beres' di RSOLV?",
                 "answer": "Kami paham Anda sibuk mengurus bisnis. 'Terima Beres' artinya kami yang mengurus hal teknis memusingkan: Setup Domain, Konfigurasi DNS, Instalasi Panel VPS, Security SSL, hingga Integrasi Email. Anda cukup terima login dashboard dan siap pakai."
             },
             {
