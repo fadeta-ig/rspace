@@ -15,18 +15,23 @@ export default function Process() {
         const leftCol = leftColRef.current;
         if (!section || !leftCol) return;
 
+        // Only enable GSAP pinning on desktop (lg breakpoint = 1024px)
+        const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+
         import("gsap").then(({ gsap }) => {
             import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
                 gsap.registerPlugin(ScrollTrigger);
 
-                // 1. PINNING THE LEFT COLUMN
-                ScrollTrigger.create({
-                    trigger: section,
-                    start: "top top",
-                    end: "bottom bottom",
-                    pin: leftCol,
-                    pinSpacing: false,
-                });
+                // 1. PINNING THE LEFT COLUMN — only on desktop
+                if (isDesktop) {
+                    ScrollTrigger.create({
+                        trigger: section,
+                        start: "top top",
+                        end: "bottom bottom",
+                        pin: leftCol,
+                        pinSpacing: false,
+                    });
+                }
 
                 // 2. PROGRESS LINE ANIMATION
                 gsap.fromTo(
@@ -53,7 +58,7 @@ export default function Process() {
                     const contentBox = item.querySelector(".process-item-content");
 
                     gsap.fromTo(contentBox,
-                        { opacity: 0, y: 60, scale: 0.98 },
+                        { opacity: 0, y: 40, scale: 0.98 },
                         {
                             opacity: 1,
                             y: 0,
@@ -136,25 +141,25 @@ export default function Process() {
     }, []);
 
     return (
-        <section id="process" ref={sectionRef} className="section bg-white overflow-hidden py-0 border-t border-slate-50 min-h-screen">
-            <div className="container px-4 lg:px-12 mx-auto py-32">
-                <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+        <section id="process" ref={sectionRef} className="section bg-white overflow-hidden py-0 border-t border-slate-50">
+            <div className="container px-4 sm:px-6 lg:px-12 mx-auto py-16 sm:py-20 lg:py-32">
+                <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-start">
 
                     {/* Left Side: Pinned Headline Container */}
                     <div className="lg:w-1/3 w-full self-start" ref={leftColRef}>
                         <div className="process-sticky-header h-fit lg:pt-8">
-                            <span className="inline-block px-3 py-1 bg-[#002B7F] text-white text-[10px] font-bold rounded-full uppercase tracking-[0.2em] mb-6">
+                            <span className="inline-block px-3 py-1 bg-[#002B7F] text-white text-[10px] font-bold rounded-full uppercase tracking-[0.2em] mb-4 sm:mb-6">
                                 {process.tag}
                             </span>
-                            <h2 className="text-3xl lg:text-5xl font-black text-[#0f172a] mb-6 leading-[1.1] tracking-tight">
+                            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-black text-[#0f172a] mb-4 sm:mb-6 leading-[1.1] tracking-tight">
                                 {process.title}
                             </h2>
-                            <div className="w-12 h-1 bg-[#002B7F] mb-8 rounded-full" />
-                            <p className="text-lg text-[#64748b] leading-relaxed max-w-xs font-medium">
+                            <div className="w-10 sm:w-12 h-1 bg-[#002B7F] mb-4 sm:mb-8 rounded-full" />
+                            <p className="text-sm sm:text-base lg:text-lg text-[#64748b] leading-relaxed max-w-xs font-medium">
                                 {process.description}
                             </p>
 
-                            <div className="mt-12 hidden lg:block">
+                            <div className="mt-8 lg:mt-12 hidden lg:block">
                                 <div className="flex items-center gap-3 text-[10px] font-bold text-[#002B7F] uppercase tracking-widest opacity-60">
                                     <div className="w-8 h-[1px] bg-[#002B7F]"></div>
                                     The Roadmap to Success
@@ -164,43 +169,43 @@ export default function Process() {
                     </div>
 
                     {/* Right Side: Vertical Timeline Items */}
-                    <div className="lg:w-2/3 w-full relative process-items-container pl-4 md:pl-0 flex flex-col gap-12 md:gap-24 lg:pb-[20vh]">
+                    <div className="lg:w-2/3 w-full relative process-items-container pl-8 sm:pl-10 md:pl-12 lg:pl-0 flex flex-col gap-6 sm:gap-8 md:gap-12 lg:gap-16 lg:pb-[20vh]">
 
                         {/* Connection Line (Static) */}
-                        <div className="absolute left-[8px] md:left-[16px] top-10 bottom-10 w-[1px] bg-slate-100 hidden sm:block" />
+                        <div className="absolute left-[8px] sm:left-[12px] md:left-[16px] top-6 bottom-6 w-[1px] bg-slate-100" />
 
                         {/* Progress Line overlay */}
                         <div
                             ref={lineRef}
-                            className="absolute left-[8px] md:left-[16px] top-10 bottom-10 w-[1px] bg-[#002B7F] origin-top hidden sm:block z-10"
+                            className="absolute left-[8px] sm:left-[12px] md:left-[16px] top-6 bottom-6 w-[1px] bg-[#002B7F] origin-top z-10"
                         />
 
                         {process.items.map((item, index) => (
-                            <div key={index} className="process-item-trigger relative pl-8 md:pl-24 py-2 group transition-all duration-700">
+                            <div key={index} className="process-item-trigger relative pl-6 sm:pl-8 md:pl-16 lg:pl-20 py-1 group transition-all duration-700">
 
                                 {/* Circle Dot Marker */}
-                                <div className="absolute left-[-2px] md:left-[5px] top-10 w-[22px] h-[22px] bg-white z-20 hidden sm:flex items-center justify-center rounded-full border border-slate-100 shadow-sm">
+                                <div className="absolute left-[-2px] sm:left-[1px] md:left-[5px] top-6 sm:top-8 w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] bg-white z-20 flex items-center justify-center rounded-full border border-slate-100 shadow-sm">
                                     <div className="process-dot-inner w-2 h-2 rounded-full bg-slate-200 transition-all duration-500" />
                                 </div>
 
                                 {/* Step Card */}
-                                <div className="process-item-content relative bg-slate-50/50 p-8 md:p-10 rounded-3xl border border-transparent transition-all duration-700">
-                                    <div className="flex items-center gap-4 mb-6">
-                                        <span className="step-number text-[10px] font-black tracking-[0.2em] text-[#94a3b8] opacity-50 transition-all duration-500 uppercase">
+                                <div className="process-item-content relative bg-slate-50/50 p-5 sm:p-6 md:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-transparent transition-all duration-700 overflow-hidden">
+                                    <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4 md:mb-6">
+                                        <span className="step-number text-[9px] sm:text-[10px] font-black tracking-[0.2em] text-[#94a3b8] opacity-50 transition-all duration-500 uppercase">
                                             PHASE {(index + 1).toString().padStart(2, '0')}
                                         </span>
-                                        <div className="h-[1px] w-8 bg-slate-200" />
+                                        <div className="h-[1px] w-6 sm:w-8 bg-slate-200" />
                                     </div>
 
-                                    <h3 className="process-item-title text-2xl md:text-3xl font-black text-[#0f172a] mb-4 transition-all duration-500">
+                                    <h3 className="process-item-title text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-[#0f172a] mb-2 sm:mb-3 md:mb-4 transition-all duration-500">
                                         {item.title}
                                     </h3>
 
-                                    <p className="text-[#64748b] leading-relaxed text-base md:text-lg max-w-2xl font-medium">
+                                    <p className="text-[#64748b] leading-relaxed text-sm sm:text-base md:text-lg max-w-2xl font-medium">
                                         {item.desc}
                                     </p>
 
-                                    <div className="absolute right-8 bottom-8 text-[100px] font-black text-slate-200/20 select-none pointer-events-none group-hover:text-[#002B7F]/5 transition-colors duration-1000 leading-none">
+                                    <div className="absolute right-4 sm:right-6 md:right-8 bottom-4 sm:bottom-6 md:bottom-8 text-[48px] sm:text-[64px] md:text-[80px] lg:text-[100px] font-black text-slate-200/20 select-none pointer-events-none group-hover:text-[#002B7F]/5 transition-colors duration-1000 leading-none">
                                         {index + 1}
                                     </div>
                                 </div>
