@@ -54,7 +54,7 @@ export default function Hero() {
                         <Image
                             src={logo}
                             alt={site.name}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full"
                         />
                     </div>
                     <span className="hero-brand-name">{site.name}</span>

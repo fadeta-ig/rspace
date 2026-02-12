@@ -18,7 +18,7 @@ export default function Footer() {
                                 <Image
                                     src={logo}
                                     alt={site.name}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
                                 />
                             </div>
                             <span className="font-bold text-lg text-white tracking-tight">{site.name}</span>

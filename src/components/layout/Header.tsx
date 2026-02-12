@@ -60,7 +60,7 @@ export default function Header() {
                                 <Image
                                     src={logo}
                                     alt={site.name}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
                                 />
                             </div>
                             <span className="font-bold text-xl text-black tracking-tighter">{site.name}</span>
