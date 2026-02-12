@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import content from "@/data/content.json";
+import logo from "@/assets/logo/rsolv-logo.webp";
 import { CloseIcon, ContactIcon } from "@/components/ui/Icons";
 
 const { site, navbar } = content;
@@ -54,8 +56,12 @@ export default function Header() {
                 <div className="container px-4 lg:px-8">
                     <div className="flex items-center justify-between h-20">
                         <Link href="/" className="flex items-center gap-2 group">
-                            <div className="w-10 h-10 rounded-xl bg-[#002B7F] flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
-                                <span className="text-white font-bold text-lg">{site.logoLetter}</span>
+                            <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+                                <Image
+                                    src={logo}
+                                    alt={site.name}
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                             <span className="font-bold text-xl text-black tracking-tighter">{site.name}</span>
                         </Link>
@@ -102,8 +108,12 @@ export default function Header() {
                 {/* Close Button Header */}
                 <div className="flex items-center justify-between p-6">
                     <Link href="/" onClick={closeMenu} className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-lg bg-[#002B7F] flex items-center justify-center">
-                            <span className="text-white font-bold text-sm">{site.logoLetter}</span>
+                        <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center">
+                            <Image
+                                src={logo}
+                                alt={site.name}
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                         <span className="font-bold text-lg text-black tracking-tight">{site.name}</span>
                     </Link>

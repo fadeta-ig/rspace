@@ -2,7 +2,9 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import content from "@/data/content.json";
+import logo from "@/assets/logo/rsolv-logo.webp";
 import InteractiveBackground from "@/components/ui/InteractiveBackground";
 
 const { hero, site } = content;
@@ -48,8 +50,12 @@ export default function Hero() {
             <div className="hero-content">
                 {/* Logo with Brand Name */}
                 <div className="hero-brand opacity-0">
-                    <div className="logo-icon">
-                        <span>{site.logoLetter}</span>
+                    <div className="logo-icon overflow-hidden">
+                        <Image
+                            src={logo}
+                            alt={site.name}
+                            className="w-full h-full object-cover"
+                        />
                     </div>
                     <span className="hero-brand-name">{site.name}</span>
                 </div>

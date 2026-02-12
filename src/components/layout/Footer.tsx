@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import content from "@/data/content.json";
+import logo from "@/assets/logo/rsolv-logo.webp";
 
 const { site, navbar, footer, contact } = content;
 
@@ -12,8 +14,12 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     <div className="md:col-span-2">
                         <Link href="/" className="flex items-center gap-2 mb-4 group cursor-pointer">
-                            <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                                <span className="text-[#002B7F] font-bold text-sm">{site.logoLetter}</span>
+                            <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+                                <Image
+                                    src={logo}
+                                    alt={site.name}
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                             <span className="font-bold text-lg text-white tracking-tight">{site.name}</span>
                         </Link>
